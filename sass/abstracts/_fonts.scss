@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "abril-fatface";
+  src: url("../css/fonts/Abril_Fatface_Regular-web/Abril_Fatface.woff2")
+      format("woff2"),
+    url("../css/fonts/Abril_Fatface_Regular-web/Abril_Fatface.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* mulish-regular - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("../css/fonts/Mulish/mulish-v12-latin-regular.woff2") format("woff2"),
+    url("../css/fonts/Mulish/mulish-v12-latin-regular.woff") format("woff"),
+    url("../css/fonts/Mulish/mulish-v12-latin-regular.ttf") format("truetype"),
+    url("../css/fonts/Mulish/mulish-v12-latin-regular.svg#Mulish") format("svg");
+}
+/* mulish-700 - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("../css/fonts/Mulish/mulish-v12-latin-700.woff2") format("woff2"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700.woff") format("woff"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700.ttf") format("truetype"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700.svg#Mulish") format("svg");
+}
+/* mulish-900 - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+
+  src: url("../css/fonts/Mulish/mulish-v12-latin-900.woff2") format("woff2"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900.woff") format("woff"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900.ttf") format("truetype"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900.svg#Mulish") format("svg");
+}
+/* mulish-700italic - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 700;
+
+  src: url("../css/fonts/Mulish/mulish-v12-latin-700italic.woff2")
+      format("woff2"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700italic.woff") format("woff"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700italic.ttf") format("truetype"),
+    url("../css/fonts/Mulish/mulish-v12-latin-700italic.svg#Mulish")
+      format("svg");
+}
+
+/* mulish-900italic - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 900;
+
+  src: url("../css/fonts/Mulish/mulish-v12-latin-900italic.woff2")
+      format("woff2"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900italic.woff") format("woff"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900italic.ttf") format("truetype"),
+    url("../css/fonts/Mulish/mulish-v12-latin-900italic.svg#Mulish")
+      format("svg");
+}

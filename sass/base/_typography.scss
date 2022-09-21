@@ -1,0 +1,32 @@
+h1 {
+  font-family: $font-primary-heading;
+  font-size: clamp(2rem, calc(0.93rem + 5.37vw), 4.75rem);
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: $color-text-light;
+  font-size: 1.4rem;
+}
+
+.heading-primary {
+  // line-height: 7rem;
+  line-height: max(3rem, 7rem);
+
+  animation: moveInTop 1s ease-in backwards;
+
+  &-sub-1 {
+    font-style: italic;
+    animation: moveInTop 1s ease-in 1.75s backwards;
+    .hello-span {
+      font-weight: 900;
+    }
+  }
+
+  &-sub-2 {
+    // padding-right: 15rem;
+    padding-right: max(2rem, 15rem);
+    line-height: 3rem;
+  }
+}

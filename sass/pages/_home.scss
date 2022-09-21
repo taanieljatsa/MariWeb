@@ -1,0 +1,40 @@
+.yellow-stripe-inner {
+  position: relative;
+}
+
+.yellow-stripe-outer {
+  position: relative;
+  display: inline-block;
+  padding-right: 0.8rem;
+  margin-right: -0.8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(
+      to bottom,
+      $color-primary,
+      $color-primary 50%,
+      $color-secondary 50%
+    );
+    animation: stripeInLeft 1s ease-in 0.75s backwards;
+  }
+}
+
+.web-design-girl {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+
+@media (max-width: 1024px) {
+  .heading-primary-sub-2 {
+    padding-right: 0;
+  }
+
+  .web-design-girl {
+    display: none;
+  }
+}

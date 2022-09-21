@@ -1,0 +1,128 @@
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-dark;
+  padding: 1.5rem 0;
+  display: inline-block;
+  word-wrap: none;
+  text-align: center;
+  position: relative;
+  width: $width-button;
+
+  &:active {
+    translate: 5px 5px;
+    transition: all 0.1s;
+  }
+
+  &-animated {
+    animation: moveInTop 1s ease-in 2.5s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-border {
+  position: relative;
+  display: inline-block;
+  width: $width-button;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: solid 4px $color-dark;
+    width: 100%;
+    height: 100%;
+    translate: 6px 6px;
+  }
+}
+
+.btn-border-animated::before {
+  content: "";
+  animation: btnBorderFall 1s ease-in 2.7s backwards;
+}
+
+.hidden-btn-1 {
+  scale: 0;
+  translate: 105px 40px;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.show-btn-1 {
+  scale: 1;
+  translate: 0;
+  opacity: 1;
+}
+
+.hidden-btn-2 {
+  // rotate: x -90deg;
+  // rotate: y -90deg;
+  rotate: -180deg;
+  transform-origin: left;
+  translate: 5px 5px;
+  transition: all 2s;
+}
+
+.show-btn-2 {
+  // rotate: x 0deg;
+  // rotate: y 0deg;
+  rotate: 0deg;
+  translate: 0;
+}
+
+.hidden-btn-2-border {
+  rotate: 180deg;
+  transform-origin: center;
+  translate: 5px 5px;
+  transition: all 2s;
+}
+
+.show-btn-2-border {
+  rotate: 0deg;
+  translate: 0;
+}
+
+.hidden-btn-3 {
+  opacity: 0;
+}
+
+.show-btn-3 {
+  opacity: 1;
+  animation: animatedBtn-3 2s ease-in 1;
+}
+
+.hidden-btn-3-border {
+  opacity: 0;
+}
+
+.show-btn-3-border {
+  opacity: 1;
+  animation: animatedBtn-3-border 2s ease-in 1;
+}
+
+.hidden-btn-4 {
+  opacity: 0;
+  // scale: 0;
+  // filter: blur(5px);
+  // transition: all 4s;
+}
+
+.show-btn-4 {
+  opacity: 1;
+  // scale: 1;
+  // filter: blur(0px);
+  animation: animatedBtn-4 3s ease-in 1;
+}
+
+.hidden-btn-4-border {
+  opacity: 0;
+  // scale: 0;
+  // filter: blur(5px);
+  // transition: all 4s;
+}
+
+.show-btn-4-border {
+  opacity: 1;
+  // scale: 1;
+  // filter: blur(0px);
+  animation: animatedBtn-4-border 3s ease-in-out 1;
+}

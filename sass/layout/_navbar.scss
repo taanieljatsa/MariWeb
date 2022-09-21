@@ -1,0 +1,27 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  &-logo-box,
+  &-buttons {
+    flex: 1;
+    flex-wrap: wrap;
+    font-weight: 900;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 3rem;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: $color-text-dark;
+  }
+}

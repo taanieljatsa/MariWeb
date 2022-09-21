@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+
+  background-color: $color-primary;
+  max-width: $max-width;
+  margin-top: $margin-top-bottom;
+  margin-right: auto;
+  margin-left: auto;
+  // min-height: 85vh;
+}
+
+.header-text-box {
+  width: clamp(20ch, 80%, 80ch);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: max(0, 3%) max(0, 10%);
+  // padding-bottom: 4rem;
+  // margin: 0 auto;
+  // margin-left: max()
+  // transform: translate(-22%, 15%);
+  // transform: translate(calc(1ch - 20%), calc(1ch - 15%));
+  & > * {
+    margin: 2rem 0;
+  }
+}
+
+.stripe-scroll {
+  position: relative;
+  display: inline-block;
+  left: 83%;
+  width: 12rem;
+  transform: rotate(90deg);
+  padding-top: 1rem;
+
+  .scroll {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-align: left;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      border-bottom: solid;
+      padding: 0rem 1rem 2rem 0;
+      animation: borderScrollAnim 3.7s linear infinite;
+    }
+  }
+}
