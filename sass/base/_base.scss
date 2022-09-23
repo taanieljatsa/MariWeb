@@ -21,19 +21,22 @@ body {
 
 .hidden {
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(5px);
   scale: 0.9;
-  transition: all 1s;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
 }
 
 .show {
   opacity: 1;
   filter: blur(0);
   scale: 1;
+  transform: translateX(0);
+  transition: all 1s ease-out;
 }
 
-// @media (preferes-reduced-motion) {
-//   .hidden .hidden-btn-1 {
-//     transition: none;
-//   }
-// }
+@media (preferes-reduced-motion) {
+  .hidden .hidden-btn-1 {
+    transition: none;
+  }
+}

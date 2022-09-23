@@ -223,14 +223,21 @@ body {
 
 .hidden {
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(5px);
   scale: 0.9;
-  transition: all 1s; }
+  transform: translateX(-100%);
+  transition: all 1s ease-out; }
 
 .show {
   opacity: 1;
   filter: blur(0);
-  scale: 1; }
+  scale: 1;
+  transform: translateX(0);
+  transition: all 1s ease-out; }
+
+@media (preferes-reduced-motion) {
+  .hidden .hidden-btn-1 {
+    transition: none; } }
 
 h1 {
   font-family: "abril-fatface";
@@ -363,13 +370,13 @@ h2 {
   display: flex;
   flex-wrap: wrap-reverse;
   max-width: 96%;
-  margin: 8rem auto; }
+  margin: 6rem auto; }
 
 .work-introduction-side {
   position: relative;
   width: clamp(20ch, 30%, 80ch);
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 6rem 0;
   overflow: hidden; }
 
 .border-1 {
@@ -473,7 +480,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding-right: 0.8rem;
-  margin-right: -0.83rem; }
+  margin-right: -0.84rem; }
   .yellow-stripe-outer::before {
     content: "";
     position: absolute;
@@ -612,7 +619,9 @@ h2 {
 
 @media (max-width: 700px) {
   .copyright {
-    text-align: center; } }
+    text-align: center; }
+  .web-dev-guy {
+    width: 40%; } }
 
 .footer {
   display: flex;
