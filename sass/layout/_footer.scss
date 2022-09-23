@@ -17,10 +17,6 @@
 
 .copyright {
   position: relative;
-  // right: 50rem;
-  // top: 10rem;
-
-  // margin-left: clamp(5rem, calc(50vw - 30rem), 15rem);
   max-width: 80%;
   margin: 10rem auto 0;
   padding-bottom: 2rem;
@@ -44,13 +40,11 @@
 }
 
 .footer-div-left {
-  // max-width: 50%;
   margin: 4rem auto 0;
   width: clamp(20ch, 30%, 80ch);
 }
 
 .footer-div-right {
-  // max-width: 50%;
   margin: 4rem auto 0;
   width: clamp(20ch, 30%, 80ch);
 }

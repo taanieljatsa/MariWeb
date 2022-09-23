@@ -14,75 +14,6 @@
   overflow: hidden;
 }
 
-// .work-pictures-side {
-//   position: relative;
-//   width: clamp(20ch, 30%, 80ch);
-//   min-height: 40rem;
-//   background-color: $color-primary;
-//   margin: 8rem auto;
-//   overflow: hidden;
-//   transition: all 0.2s;
-// }
-
-// .border-1 {
-//   position: relative;
-//   display: inline-block;
-//   block-size: fit-content;
-// }
-// .border-2 {
-//   position: relative;
-//   display: inline-block;
-//   block-size: fit-content;
-// }
-
-// .work-pictures-side:before {
-//   content: "";
-//   position: absolute;
-//   bottom: -10px;
-//   left: -10px;
-//   height: 40%;
-//   width: 10%;
-//   border-left: 6px dotted $color-text-light;
-//   border-bottom: 6px dotted $color-text-light;
-// }
-
-// .work-pictures-side:hover {
-//   overflow: visible;
-// }
-
-// .main-pic {
-//   width: 64%;
-//   height: 99%;
-// }
-
-// .pic-1 {
-//   position: absolute;
-//   border-radius: 2px;
-//   top: 20%;
-//   left: 10%;
-//   z-index: 1;
-//   box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
-// }
-
-// .pic-1:hover {
-//   transform: scale(1.05);
-//   box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.4);
-// }
-
-// .pic-2 {
-//   position: absolute;
-//   border-radius: 2px;
-//   top: 5%;
-//   right: 10%;
-// }
-
-// .pic-2:hover {
-//   transform: scale(1.05);
-
-//   box-shadow: 0 2.5rem 6rem rgba($color-dark, 0.4);
-//   z-index: 2;
-// }
-
 .border-1 {
   position: relative;
   width: clamp(20ch, 30%, 80ch);
@@ -96,12 +27,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  // overflow: hidden;
 }
-
-// .work-pictures-side:hover {
-//   //   overflow: visible;
-//   // }
 
 .border-2 {
   position: relative;
@@ -135,32 +61,32 @@
 
 .animated-dots:before {
   content: "";
-  animation: animatedDots 6s linear 3;
+  animation: animatedDots 6s linear 10;
 }
 
 .animated-dots-2:before {
   content: "";
-  animation: animatedDots-2 6s linear 3;
+  animation: animatedDots-2 6s linear 10;
 }
 
 .animated-dots-3:before {
   content: "";
-  animation: animatedDots-3 3s ease-in-out 5;
+  animation: animatedDots-3 3s ease-in-out 15;
 }
 
 .animated-dots-4:before {
   content: "";
-  animation: animatedDots-4 3s ease-in 5;
+  animation: animatedDots-4 3s ease-in 15;
 }
 
 .main-pic {
-  width: 64%;
-  height: 99%;
+  width: 272px;
+  height: 396px;
+  border-radius: 2px;
 }
 
 .pic-1 {
   position: absolute;
-  border-radius: 2px;
   top: 20%;
   left: 10%;
   z-index: 1;
@@ -174,7 +100,6 @@
 
 .pic-2 {
   position: absolute;
-  border-radius: 2px;
   top: 5%;
   right: 10%;
 }
@@ -192,7 +117,6 @@
   }
 
   .border-1 {
-    // width: 60ch;
     width: 45ch;
   }
 }

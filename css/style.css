@@ -221,24 +221,6 @@ body {
   font-family: "Mulish";
   font-size: 1.7rem; }
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  scale: 0.9;
-  transform: translateY(20%);
-  transition: all 1s ease-in-out; }
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  scale: 1;
-  transform: translateY(0);
-  transition: all 1s ease-in-out; }
-
-@media (preferes-reduced-motion) {
-  .hidden .hidden-btn-1 {
-    transition: none; } }
-
 h1 {
   font-family: "abril-fatface";
   font-size: clamp(2rem, calc(0.93rem + 5.37vw), 4.75rem);
@@ -306,6 +288,127 @@ h2 {
   content: "";
   animation: btnBorderFall 1s ease-in 2.7s backwards; }
 
+.work-section-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 96%;
+  margin: 6rem auto; }
+
+.work-introduction-side {
+  position: relative;
+  width: clamp(20ch, 30%, 80ch);
+  margin: 0 auto;
+  padding: 6rem 0;
+  overflow: hidden; }
+
+.border-1 {
+  position: relative;
+  width: clamp(20ch, 30%, 80ch);
+  min-height: 40rem;
+  background-color: #cbd8c8;
+  margin: 8rem auto;
+  transition: all 0.2s; }
+
+.work-pictures-side {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.border-2 {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.border-1:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  height: 16ch;
+  width: 4.4ch;
+  border-left: 6px dotted #b7b4b9;
+  border-bottom: 6px dotted #b7b4b9;
+  opacity: 0.5; }
+
+.border-2:before {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: -35px;
+  height: 17.4ch;
+  width: 5.9ch;
+  border-left: 6px dotted #b7b4b9;
+  border-bottom: 6px dotted #b7b4b9;
+  opacity: 0.5; }
+
+.animated-dots:before {
+  content: "";
+  animation: animatedDots 6s linear 10; }
+
+.animated-dots-2:before {
+  content: "";
+  animation: animatedDots-2 6s linear 10; }
+
+.animated-dots-3:before {
+  content: "";
+  animation: animatedDots-3 3s ease-in-out 15; }
+
+.animated-dots-4:before {
+  content: "";
+  animation: animatedDots-4 3s ease-in 15; }
+
+.main-pic {
+  width: 272px;
+  height: 396px;
+  border-radius: 2px; }
+
+.pic-1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+  box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4); }
+
+.pic-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.4); }
+
+.pic-2 {
+  position: absolute;
+  top: 5%;
+  right: 10%; }
+
+.pic-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 6rem rgba(33, 33, 33, 0.4);
+  z-index: 2; }
+
+@media (max-width: 1024px) {
+  .work-introduction-side {
+    width: 80%; }
+  .border-1 {
+    width: 45ch; } }
+
+@media (max-width: 500px) {
+  .border-1:before,
+  .border-2:before {
+    display: none; } }
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  scale: 0.9;
+  transform: translateY(20%);
+  transition: all 1s ease-in-out; }
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  scale: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out; }
+
 .hidden-btn-1 {
   scale: 0;
   translate: 105px 40px;
@@ -365,113 +468,9 @@ h2 {
   opacity: 1;
   animation: animatedBtn-4-border 3s ease-in-out 1; }
 
-.work-section-container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  max-width: 96%;
-  margin: 6rem auto; }
-
-.work-introduction-side {
-  position: relative;
-  width: clamp(20ch, 30%, 80ch);
-  margin: 0 auto;
-  padding: 6rem 0;
-  overflow: hidden; }
-
-.border-1 {
-  position: relative;
-  width: clamp(20ch, 30%, 80ch);
-  min-height: 40rem;
-  background-color: #cbd8c8;
-  margin: 8rem auto;
-  transition: all 0.2s; }
-
-.work-pictures-side {
-  position: relative;
-  height: 100%;
-  width: 100%; }
-
-.border-2 {
-  position: relative;
-  height: 100%;
-  width: 100%; }
-
-.border-1:before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: -20px;
-  height: 16ch;
-  width: 4.4ch;
-  border-left: 6px dotted #b7b4b9;
-  border-bottom: 6px dotted #b7b4b9;
-  opacity: 0.5; }
-
-.border-2:before {
-  content: "";
-  position: absolute;
-  bottom: -35px;
-  left: -35px;
-  height: 17.4ch;
-  width: 5.9ch;
-  border-left: 6px dotted #b7b4b9;
-  border-bottom: 6px dotted #b7b4b9;
-  opacity: 0.5; }
-
-.animated-dots:before {
-  content: "";
-  animation: animatedDots 6s linear 3; }
-
-.animated-dots-2:before {
-  content: "";
-  animation: animatedDots-2 6s linear 3; }
-
-.animated-dots-3:before {
-  content: "";
-  animation: animatedDots-3 3s ease-in-out 5; }
-
-.animated-dots-4:before {
-  content: "";
-  animation: animatedDots-4 3s ease-in 5; }
-
-.main-pic {
-  width: 64%;
-  height: 99%; }
-
-.pic-1 {
-  position: absolute;
-  border-radius: 2px;
-  top: 20%;
-  left: 10%;
-  z-index: 1;
-  box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4); }
-
-.pic-1:hover {
-  transform: scale(1.05);
-  box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.4); }
-
-.pic-2 {
-  position: absolute;
-  border-radius: 2px;
-  top: 5%;
-  right: 10%; }
-
-.pic-2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2.5rem 6rem rgba(33, 33, 33, 0.4);
-  z-index: 2; }
-
-@media (max-width: 1024px) {
-  .work-introduction-side {
-    width: 80%; }
-  .border-1 {
-    width: 45ch; } }
-
-@media (max-width: 500px) {
-  .border-1:before,
-  .border-2:before {
-    display: none; } }
+@media (preferes-reduced-motion) {
+  .hidden .hidden-btn-1 {
+    transition: none; } }
 
 .yellow-stripe-inner {
   position: relative; }
@@ -502,11 +501,22 @@ h2 {
 
 .product-page-picture {
   width: 60%;
-  height: 80%; }
+  height: 80%;
+  border-radius: 2px;
+  box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
+  align-self: center; }
+
+.product-page-picture-cards,
+.product-page-picture-cards-2 {
+  width: 50%;
+  border-radius: 2px;
+  box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
+  margin: 0 auto; }
 
 .main-section-product-pages {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
   top: -15rem; }
 
@@ -514,7 +524,8 @@ h2 {
   text-align: center;
   width: clamp(20ch, 80%, 80ch);
   margin: 8rem auto 0;
-  min-height: 65vh; }
+  padding: 0 0 20rem;
+  height: calc(100% - 50px); }
   .product-page-text-box > * {
     margin: 2rem 0; }
   .product-page-text-box p {

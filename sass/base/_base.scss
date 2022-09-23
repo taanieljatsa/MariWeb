@@ -18,25 +18,3 @@ body {
   font-family: "Mulish";
   font-size: 1.7rem;
 }
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  scale: 0.9;
-  transform: translateY(20%);
-  transition: all 1s ease-in-out;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  scale: 1;
-  transform: translateY(0);
-  transition: all 1s ease-in-out;
-}
-
-@media (preferes-reduced-motion) {
-  .hidden .hidden-btn-1 {
-    transition: none;
-  }
-}
