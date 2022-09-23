@@ -57,9 +57,9 @@
   // rotate: x -90deg;
   // rotate: y -90deg;
   rotate: -180deg;
-  transform-origin: left;
+  transform-origin: center;
   translate: 5px 5px;
-  transition: all 2s;
+  transition: all 2s ease-out;
 }
 
 .show-btn-2 {
@@ -71,9 +71,9 @@
 
 .hidden-btn-2-border {
   rotate: 180deg;
-  transform-origin: center;
+  transform-origin: right;
   translate: 5px 5px;
-  transition: all 2s;
+  transition: all 2s ease-out;
 }
 
 .show-btn-2-border {
@@ -110,7 +110,7 @@
   opacity: 1;
   // scale: 1;
   // filter: blur(0px);
-  animation: animatedBtn-4 3s ease-in 1;
+  animation: animatedBtn-4 3s ease-in-out 1;
 }
 
 .hidden-btn-4-border {

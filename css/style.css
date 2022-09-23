@@ -312,9 +312,9 @@ h2 {
 
 .hidden-btn-2 {
   rotate: -180deg;
-  transform-origin: left;
+  transform-origin: center;
   translate: 5px 5px;
-  transition: all 2s; }
+  transition: all 2s ease-out; }
 
 .show-btn-2 {
   rotate: 0deg;
@@ -322,9 +322,9 @@ h2 {
 
 .hidden-btn-2-border {
   rotate: 180deg;
-  transform-origin: center;
+  transform-origin: right;
   translate: 5px 5px;
-  transition: all 2s; }
+  transition: all 2s ease-out; }
 
 .show-btn-2-border {
   rotate: 0deg;
@@ -349,7 +349,7 @@ h2 {
 
 .show-btn-4 {
   opacity: 1;
-  animation: animatedBtn-4 3s ease-in 1; }
+  animation: animatedBtn-4 3s ease-in-out 1; }
 
 .hidden-btn-4-border {
   opacity: 0; }
@@ -471,7 +471,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding-right: 0.8rem;
-  margin-right: -0.8rem; }
+  margin-right: -0.83rem; }
   .yellow-stripe-outer::before {
     content: "";
     position: absolute;
@@ -490,6 +490,26 @@ h2 {
     padding-right: 0; }
   .web-design-girl {
     display: none; } }
+
+.product-page-picture {
+  width: 60%;
+  height: 80%; }
+
+.main-section-product-pages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -15rem; }
+
+.product-page-text-box {
+  text-align: center;
+  width: clamp(20ch, 80%, 80ch);
+  margin: 8rem auto 0;
+  min-height: 65vh; }
+  .product-page-text-box > * {
+    margin: 2rem 0; }
+  .product-page-text-box p {
+    line-height: 3rem; }
 
 .what-we-do {
   position: relative;
@@ -566,6 +586,14 @@ h2 {
     text-decoration: none;
     text-transform: lowercase;
     color: #212121; }
+
+.web-dev-div-guy {
+  position: relative; }
+
+.web-dev-guy {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 .footer-section {
   background-color: #cbd8c8;

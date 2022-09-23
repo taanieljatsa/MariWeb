@@ -1,0 +1,27 @@
+.product-page-picture {
+  width: 60%;
+  height: 80%;
+}
+
+.main-section-product-pages {
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 8rem;
+  position: relative;
+  top: -15rem;
+}
+
+.product-page-text-box {
+  text-align: center;
+  width: clamp(20ch, 80%, 80ch);
+  margin: 8rem auto 0;
+  // line-height: 2rem;
+  min-height: 65vh;
+  & > * {
+    margin: 2rem 0;
+  }
+
+  & p {
+    line-height: 3rem;
+  }
+}

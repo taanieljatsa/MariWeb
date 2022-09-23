@@ -3,10 +3,9 @@ const observer = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
-    // else {
-    //   entry.target.classList.remove("show");
-    // }
   });
 });
 
@@ -18,10 +17,9 @@ const observerOne = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-1");
+    } else {
+      entry.target.classList.remove("show-btn-1");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-1");
-    // }
   });
 });
 
@@ -33,10 +31,9 @@ const observerTwo = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-2");
+    } else {
+      entry.target.classList.remove("show-btn-2");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-2");
-    // }
   });
 });
 
@@ -48,10 +45,9 @@ const observerTwoBorder = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-2-border");
+    } else {
+      entry.target.classList.remove("show-btn-2-border");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-2-border");
-    // }
   });
 });
 
@@ -65,10 +61,9 @@ const observerThree = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-3");
+    } else {
+      entry.target.classList.remove("show-btn-3");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-3");
-    // }
   });
 });
 
@@ -80,10 +75,9 @@ const observerThreeBorder = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-3-border");
+    } else {
+      entry.target.classList.remove("show-btn-3-border");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-3-border");
-    // }
   });
 });
 
@@ -97,10 +91,9 @@ const observerFour = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-4");
+    } else {
+      entry.target.classList.remove("show-btn-4");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-4");
-    // }
   });
 });
 
@@ -112,10 +105,9 @@ const observerFourBorder = new IntersectionObserver((entries) => {
     // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-btn-4-border");
+    } else {
+      entry.target.classList.remove("show-btn-4-border");
     }
-    // else {
-    //   entry.target.classList.remove("show-btn-4-border");
-    // }
   });
 });
 
