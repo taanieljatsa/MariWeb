@@ -42,9 +42,11 @@
 @keyframes btnBorderFall {
   0% {
     translate: -3px -3px;
+    transform: translate(-3px -3px);
     border: none; }
   100% {
-    translate: 6px 6px; } }
+    translate: 6px 6px;
+    transform: translate(6px 6px); } }
 
 @keyframes borderScrollAnim {
   0% {
@@ -372,7 +374,7 @@ h2 {
 
 .main-pic {
   width: 272px;
-  height: 396px;
+  height: 400px;
   border-radius: 2px; }
 
 .pic-1 {
@@ -405,7 +407,10 @@ h2 {
 @media (max-width: 500px) {
   .border-1:before,
   .border-2:before {
-    display: none; } }
+    display: none; }
+  .main-pic {
+    width: 240px;
+    height: 353px; } }
 
 .hidden {
   opacity: 0;

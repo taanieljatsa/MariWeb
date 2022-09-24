@@ -81,7 +81,8 @@
 
 .main-pic {
   width: 272px;
-  height: 396px;
+  // height: 396px;
+  height: 400px;
   border-radius: 2px;
 }
 
@@ -125,5 +126,11 @@
   .border-1:before,
   .border-2:before {
     display: none;
+  }
+
+  .main-pic {
+    width: 240px;
+    // height: 396px;
+    height: 353px;
   }
 }

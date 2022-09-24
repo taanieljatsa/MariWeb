@@ -1,11 +1,13 @@
 @keyframes btnBorderFall {
   0% {
     translate: -3px -3px;
+    transform: translate(-3px -3px);
     border: none;
   }
 
   100% {
     translate: 6px 6px;
+    transform: translate(6px 6px);
   }
 }
 
