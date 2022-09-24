@@ -34,8 +34,7 @@
     text-align: left;
     text-transform: uppercase;
 
-    &:after,
-    :before {
+    &::before {
       content: "";
       position: absolute;
       display: block;

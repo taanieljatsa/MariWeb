@@ -1,7 +1,8 @@
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  scale: 0.9;
+  // scale: 0.9;
+  transform: scale(0.9);
   transform: translateY(20%);
   transition: all 1s ease-in-out;
 }
@@ -9,21 +10,24 @@
 .show {
   opacity: 1;
   filter: blur(0);
-  scale: 1;
+  // scale: 1;
+  transform: scale(1);
   transform: translateY(0);
   transition: all 1s ease-in-out;
 }
 
 .hidden-btn-1 {
-  scale: 0;
-  translate: 105px 40px;
+  // scale: 0;
+  // translate: 105px 40px;
+  transform: translate(105px, 40px) scale(0);
   transition: all 1s;
   opacity: 0;
 }
 
 .show-btn-1 {
-  scale: 1;
-  translate: 0;
+  // scale: 1;
+  // translate: 0;
+  transform: translate(0) scale(1);
   opacity: 1;
 }
 
@@ -31,6 +35,7 @@
   rotate: -180deg;
   transform-origin: center;
   translate: 5px 5px;
+
   transition: all 2s ease-out;
 }
 

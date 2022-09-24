@@ -41,10 +41,12 @@
 
 @keyframes btnBorderFall {
   0% {
-    transform: translate(-3px, -3px);
+    transform: translate(0);
     border: none; }
+  25% {
+    transform: translate(0); }
   100% {
-    transform: translate(0px, 0px); } }
+    transform: translate(6px, 6px); } }
 
 @keyframes borderScrollAnim {
   0% {
@@ -114,53 +116,53 @@
   0% {
     border-left: 1px dotted #b7b4b9;
     border-bottom: 1px dotted #b7b4b9;
-    translate: 20px -20px; }
+    transform: translate(20px, -20px); }
   25% {
     border-left: 6px dotted #b7b4b9;
     border-bottom: 6px dotted #b7b4b9;
-    translate: 0; }
+    transform: translate(0); }
   50% {
     border-left: 1px dotted #b7b4b9;
     border-bottom: 1px dotted #b7b4b9;
-    translate: 20px -20px; }
+    transform: translate(20px, -20px); }
   75% {
     border-left: 6px dotted #b7b4b9;
     border-bottom: 6px dotted #b7b4b9;
-    translate: 0; }
+    transform: translate(0); }
   100% {
     border-left: 1px dotted #b7b4b9;
     border-bottom: 1px dotted #b7b4b9;
-    translate: 20px -20px; } }
+    transform: translate(20px, -20px); } }
 
 @keyframes animatedDots-4 {
   0% {
     border-left: 9px dotted #b7b4b9;
     border-bottom: 9px dotted #b7b4b9;
-    translate: -20px 20px;
+    transform: translate(-20px, 20px);
     height: 19.4ch;
     width: 7.4ch; }
   25% {
     border-left: 6px dotted #b7b4b9;
     border-bottom: 6px dotted #b7b4b9;
-    translate: 0;
+    transform: translate(0);
     height: 17.4ch;
     width: 5.9ch; }
   50% {
     border-left: 9px dotted #b7b4b9;
     border-bottom: 9px dotted #b7b4b9;
-    translate: -20px 20px;
+    transform: translate(-20px, 20px);
     height: 19.4ch;
     width: 7.4ch; }
   75% {
     border-left: 6px dotted #b7b4b9;
     border-bottom: 6px dotted #b7b4b9;
-    translate: 0;
+    transform: translate(0);
     height: 17.4ch;
     width: 5.9ch; }
   100% {
     border-left: 9px dotted #b7b4b9;
     border-bottom: 9px dotted #b7b4b9;
-    translate: -20px 20px;
+    transform: translate(-20px, 20px);
     height: 19.4ch;
     width: 7.4ch; } }
 
@@ -269,36 +271,28 @@ h2 {
   text-align: center;
   position: relative;
   width: 190px; }
-
-.btn:active {
-  translate: 5px 5px;
-  transition: all 0.1s; }
-
-.btn-animated {
-  animation: moveInTop 1s ease-in 2.5s;
-  animation-fill-mode: backwards; }
+  .btn:active {
+    transform: translate(5px, 5px);
+    transition: all 0.1s; }
+  .btn-animated {
+    animation: moveInTop 1s ease-in 2.5s;
+    animation-fill-mode: backwards; }
 
 .btn-border {
   position: relative;
   display: inline-block;
   width: 190px; }
+  .btn-border::before {
+    content: "";
+    position: absolute;
+    border: solid 4px #212121;
+    width: 100%;
+    height: 100%;
+    transform: translate(6px, 6px); }
 
-.btn-border:before {
+.btn-border-animated::before {
   content: "";
-  position: absolute;
-  border: solid 4px #212121;
-  width: 100%;
-  height: 100%;
-  translate: 6px 6px; }
-
-.btn-border-animated:before {
-  content: "";
-  position: absolute;
-  border: solid 4px #212121;
-  width: 100%;
-  height: 100%;
-  translate: 6px 6px;
-  animation: btnBorderFall 1s ease-in 2.7s backwards; }
+  animation: btnBorderFall 1s ease-in 2.8s backwards; }
 
 .work-section-container {
   position: relative;
@@ -413,26 +407,24 @@ h2 {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  scale: 0.9;
+  transform: scale(0.9);
   transform: translateY(20%);
   transition: all 1s ease-in-out; }
 
 .show {
   opacity: 1;
   filter: blur(0);
-  scale: 1;
+  transform: scale(1);
   transform: translateY(0);
   transition: all 1s ease-in-out; }
 
 .hidden-btn-1 {
-  scale: 0;
-  translate: 105px 40px;
+  transform: translate(105px, 40px) scale(0);
   transition: all 1s;
   opacity: 0; }
 
 .show-btn-1 {
-  scale: 1;
-  translate: 0;
+  transform: translate(0) scale(1);
   opacity: 1; }
 
 .hidden-btn-2 {
@@ -592,8 +584,7 @@ h2 {
     font-size: 1.3rem;
     text-align: left;
     text-transform: uppercase; }
-    .stripe-scroll .scroll:after,
-    .stripe-scroll .scroll :before {
+    .stripe-scroll .scroll::before {
       content: "";
       position: absolute;
       display: block;
