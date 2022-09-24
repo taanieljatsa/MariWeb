@@ -25,7 +25,7 @@
   display: inline-block;
   width: $width-button;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     border: solid 4px $color-dark;
@@ -35,7 +35,7 @@
   }
 }
 
-.btn-border-animated::before {
+.btn-border-animated:before {
   content: "";
   position: absolute;
   border: solid 4px $color-dark;

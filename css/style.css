@@ -280,7 +280,7 @@ h2 {
   position: relative;
   display: inline-block;
   width: 190px; }
-  .btn-border::before {
+  .btn-border:before {
     content: "";
     position: absolute;
     border: solid 4px #212121;
@@ -288,7 +288,7 @@ h2 {
     height: 100%;
     translate: 6px 6px; }
 
-.btn-border-animated::before {
+.btn-border-animated:before {
   content: "";
   position: absolute;
   border: solid 4px #212121;
@@ -586,8 +586,8 @@ h2 {
     font-size: 1.3rem;
     text-align: left;
     text-transform: uppercase; }
-    .stripe-scroll .scroll::after,
-    .stripe-scroll .scroll ::before {
+    .stripe-scroll .scroll:after,
+    .stripe-scroll .scroll :before {
       content: "";
       position: absolute;
       display: block;
