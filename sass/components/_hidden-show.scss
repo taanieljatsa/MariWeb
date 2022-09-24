@@ -32,28 +32,27 @@
 }
 
 .hidden-btn-2 {
-  rotate: -180deg;
+  // rotate: -360deg;
+  transform: rotate(-360deg);
   transform-origin: center;
-  translate: 5px 5px;
-
   transition: all 2s ease-out;
 }
 
 .show-btn-2 {
-  rotate: 0deg;
-  translate: 0;
+  // rotate: 0deg;
+  transform: rotate(0);
 }
 
 .hidden-btn-2-border {
-  rotate: 180deg;
+  // rotate: 180deg;
+  transform: rotate(180deg);
   transform-origin: right;
-  translate: 5px 5px;
   transition: all 2s ease-out;
 }
 
 .show-btn-2-border {
-  rotate: 0deg;
-  translate: 0;
+  // rotate: 0deg;
+  transform: rotate(0);
 }
 
 .hidden-btn-3 {

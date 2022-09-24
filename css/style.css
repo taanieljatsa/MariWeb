@@ -168,31 +168,27 @@
 
 @keyframes animatedBtn-3 {
   0% {
-    rotate: 0;
-    scale: 0; }
+    transform: scale(0) rotate(0); }
   100% {
-    rotate: 1440deg;
-    scale: 1; } }
+    transform: scale(1) rotate(1440deg); } }
 
 @keyframes animatedBtn-3-border {
   0% {
-    rotate: 0;
-    scale: 0; }
+    transform: scale(0) rotate(0); }
   100% {
-    rotate: -720deg;
-    scale: 1; } }
+    transform: scale(1) rotate(-720deg); } }
 
 @keyframes animatedBtn-4 {
   0% {
-    transform: skew(45deg, 45deg); }
+    transform: translate(-10px, 0) skew(45deg, 45deg); }
   25% {
-    transform: skew(-10deg, -10deg); }
+    transform: translate(10px, 0) skew(-20deg, -20deg); }
   50% {
-    transform: skew(10deg, 10deg); }
+    transform: translate(0, 0) skew(20deg, 20deg); }
   75% {
-    transform: skew(-5deg, -5deg); }
+    transform: translate(0, 0) skew(-10deg, -10deg); }
   100% {
-    transform: skew(-3deg, -3deg); } }
+    transform: translate(0, 0) skew(0deg, 0deg); } }
 
 @keyframes animatedBtn-4-border {
   0% {
@@ -204,7 +200,7 @@
   75% {
     transform: skew(5deg, 5deg); }
   100% {
-    transform: skew(3deg, 3deg); } }
+    transform: skew(0deg, 0deg); } }
 
 *,
 *::after,
@@ -428,24 +424,20 @@ h2 {
   opacity: 1; }
 
 .hidden-btn-2 {
-  rotate: -180deg;
+  transform: rotate(-360deg);
   transform-origin: center;
-  translate: 5px 5px;
   transition: all 2s ease-out; }
 
 .show-btn-2 {
-  rotate: 0deg;
-  translate: 0; }
+  transform: rotate(0); }
 
 .hidden-btn-2-border {
-  rotate: 180deg;
+  transform: rotate(180deg);
   transform-origin: right;
-  translate: 5px 5px;
   transition: all 2s ease-out; }
 
 .show-btn-2-border {
-  rotate: 0deg;
-  translate: 0; }
+  transform: rotate(0); }
 
 .hidden-btn-3 {
   opacity: 0; }

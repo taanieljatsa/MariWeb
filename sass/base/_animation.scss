@@ -209,47 +209,56 @@
 
 @keyframes animatedBtn-3 {
   0% {
-    rotate: 0;
-    scale: 0;
+    // rotate: 0;
+    // scale: 0;
+    transform: scale(0) rotate(0);
   }
 
   100% {
-    rotate: 1440deg;
-    scale: 1;
+    // rotate: 1440deg;
+    // scale: 1;
+    transform: scale(1) rotate(1440deg);
   }
 }
 
 @keyframes animatedBtn-3-border {
   0% {
-    rotate: 0;
-    scale: 0;
+    // rotate: 0;
+    // scale: 0;
+    transform: scale(0) rotate(0);
   }
 
   100% {
-    rotate: -720deg;
-    scale: 1;
+    // rotate: -720deg;
+    // scale: 1;
+    transform: scale(1) rotate(-720deg);
   }
 }
 
 @keyframes animatedBtn-4 {
   0% {
-    transform: skew(45deg, 45deg);
+    transform: translate(-10px, 0) skew(45deg, 45deg);
+    // transform: skew(90deg, 90deg);
   }
 
   25% {
-    transform: skew(-10deg, -10deg);
+    // transform: skew(-10deg, -10deg);
+    transform: translate(10px, 0) skew(-20deg, -20deg);
   }
 
   50% {
-    transform: skew(10deg, 10deg);
+    // transform: skew(10deg, 10deg);
+    transform: translate(0, 0) skew(20deg, 20deg);
   }
 
   75% {
-    transform: skew(-5deg, -5deg);
+    // transform: skew(-5deg, -5deg);
+    transform: translate(0, 0) skew(-10deg, -10deg);
   }
 
   100% {
-    transform: skew(-3deg, -3deg);
+    // transform: skew(-3deg, -3deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
   }
 }
 
@@ -271,6 +280,7 @@
   }
 
   100% {
-    transform: skew(3deg, 3deg);
+    // transform: skew(3deg, 3deg);
+    transform: skew(0deg, 0deg);
   }
 }
