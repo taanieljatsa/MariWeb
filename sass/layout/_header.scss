@@ -11,15 +11,10 @@
 
 .header-text-box {
   width: clamp(20ch, 80%, 80ch);
-  display: flex;
+  // display: flex;
   position: relative;
-  flex-direction: column;
+  // flex-direction: column;
   margin: max(0, 3%) max(0, 10%);
-  // padding-bottom: 4rem;
-  // margin: 0 auto;
-  // margin-left: max()
-  // transform: translate(-22%, 15%);
-  // transform: translate(calc(1ch - 20%), calc(1ch - 15%));
   & > * {
     margin: 2rem 0;
   }
@@ -31,7 +26,7 @@
   left: 83%;
   width: 12rem;
   transform: rotate(90deg);
-  // padding-top: 1rem;
+  padding-top: 1rem;
 
   .scroll {
     position: relative;

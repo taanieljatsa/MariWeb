@@ -232,7 +232,7 @@ h2 {
   font-size: 1.4rem; }
 
 .heading-primary {
-  line-height: 7rem;
+  line-height: clamp(2ch, 5rem, 8ch);
   animation: moveInTop 1s ease-in backwards; }
   .heading-primary-sub-1 {
     font-style: italic;
@@ -558,9 +558,7 @@ h2 {
 
 .header-text-box {
   width: clamp(20ch, 80%, 80ch);
-  display: flex;
   position: relative;
-  flex-direction: column;
   margin: 3% 10%; }
   .header-text-box > * {
     margin: 2rem 0; }
@@ -570,7 +568,8 @@ h2 {
   display: inline-block;
   left: 83%;
   width: 12rem;
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  padding-top: 1rem; }
   .stripe-scroll .scroll {
     position: relative;
     font-weight: 900;

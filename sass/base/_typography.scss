@@ -12,7 +12,8 @@ h2 {
 
 .heading-primary {
   // line-height: 7rem;
-  line-height: max(3rem, 7rem);
+  // line-height: max(3rem, 7rem);
+  line-height: clamp(2ch, 5rem, 8ch);
 
   animation: moveInTop 1s ease-in backwards;
 
