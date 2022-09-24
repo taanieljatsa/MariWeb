@@ -232,7 +232,7 @@ h2 {
   font-size: 1.4rem; }
 
 .heading-primary {
-  line-height: clamp(2ch, 5rem, 8ch);
+  line-height: clamp(1ch, 7rem, 8ch);
   animation: moveInTop 1s ease-in backwards; }
   .heading-primary-sub-1 {
     font-style: italic;
@@ -286,6 +286,11 @@ h2 {
 
 .btn-border-animated::before {
   content: "";
+  position: absolute;
+  border: solid 4px #212121;
+  width: 100%;
+  height: 100%;
+  translate: 6px 6px;
   animation: btnBorderFall 1s ease-in 2.7s backwards; }
 
 .work-section-container {
@@ -558,18 +563,19 @@ h2 {
 
 .header-text-box {
   width: clamp(20ch, 80%, 80ch);
+  display: flex;
   position: relative;
+  flex-direction: column;
   margin: 3% 10%; }
   .header-text-box > * {
-    margin: 2rem 0; }
+    margin: clamp(0.1ch, 2rem, 3ch) 0; }
 
 .stripe-scroll {
   position: relative;
   display: inline-block;
-  left: 83%;
+  left: 82.5%;
   width: 12rem;
-  transform: rotate(90deg);
-  padding-top: 1rem; }
+  transform: rotate(90deg); }
   .stripe-scroll .scroll {
     position: relative;
     font-weight: 900;
@@ -579,7 +585,7 @@ h2 {
     .stripe-scroll .scroll::after {
       content: "";
       position: absolute;
-      display: block;
+      display: inline-block;
       width: 100%;
       border-bottom: solid;
       padding: 0rem 1rem 2rem 0;
