@@ -232,7 +232,7 @@ h2 {
   font-size: 1.4rem; }
 
 .heading-primary {
-  line-height: clamp(1ch, 7rem, 8ch);
+  line-height: 7rem;
   animation: moveInTop 1s ease-in backwards; }
   .heading-primary-sub-1 {
     font-style: italic;
@@ -242,6 +242,10 @@ h2 {
   .heading-primary-sub-2 {
     padding-right: 15rem;
     line-height: 3rem; }
+
+@media (max-width: 700px) {
+  .heading-primary {
+    line-height: 4.5rem; } }
 
 .u-center-text {
   text-align: center; }
@@ -568,7 +572,7 @@ h2 {
   flex-direction: column;
   margin: 3% 10%; }
   .header-text-box > * {
-    margin: clamp(0.1ch, 2rem, 3ch) 0; }
+    margin: 2rem 0; }
 
 .stripe-scroll {
   position: relative;
@@ -582,14 +586,19 @@ h2 {
     font-size: 1.3rem;
     text-align: left;
     text-transform: uppercase; }
-    .stripe-scroll .scroll::after {
+    .stripe-scroll .scroll::after,
+    .stripe-scroll .scroll ::before {
       content: "";
       position: absolute;
-      display: inline-block;
+      display: block;
       width: 100%;
       border-bottom: solid;
       padding: 0rem 1rem 2rem 0;
       animation: borderScrollAnim 3.7s linear infinite; }
+
+@media (max-width: 700px) {
+  .header-text-box > * {
+    margin: 1rem 0; } }
 
 .navbar {
   align-items: center;

@@ -15,10 +15,8 @@
   position: relative;
   flex-direction: column;
   margin: max(0, 3%) max(0, 10%);
-  // margin: 3% 10%;
   & > * {
-    // margin: 2rem 0;
-    margin: clamp(0.1ch, 2rem, 3ch) 0;
+    margin: 2rem 0;
   }
 }
 
@@ -36,15 +34,21 @@
     text-align: left;
     text-transform: uppercase;
 
-    &::after {
+    &::after,
+    ::before {
       content: "";
       position: absolute;
-      // display: block;
-      display: inline-block;
+      display: block;
       width: 100%;
       border-bottom: solid;
       padding: 0rem 1rem 2rem 0;
       animation: borderScrollAnim 3.7s linear infinite;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .header-text-box > * {
+    margin: 1rem 0;
   }
 }
