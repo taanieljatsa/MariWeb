@@ -27,10 +27,11 @@
 
 .web-design-girl {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  top: 60%;
-  left: 60%;
+  width: 200px;
+  height: 200px;
+  top: 66%;
+  left: 64%;
+  transform: rotateZ(-6deg);
 }
 
 @media (max-width: 1024px) {

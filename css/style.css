@@ -531,10 +531,11 @@ h2 {
 
 .web-design-girl {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  top: 60%;
-  left: 60%; }
+  width: 200px;
+  height: 200px;
+  top: 66%;
+  left: 64%;
+  transform: rotateZ(-6deg); }
 
 @media (max-width: 1024px) {
   .heading-primary-sub-2 {
@@ -543,15 +544,14 @@ h2 {
     display: none; } }
 
 .product-page-picture {
-  width: 60%;
-  height: 80%;
+  width: 912px;
   border-radius: 2px;
   box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
   align-self: center; }
 
 .product-page-picture-cards,
 .product-page-picture-cards-2 {
-  width: 50%;
+  width: 912px;
   border-radius: 2px;
   box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
   margin: 0 auto; }
@@ -580,6 +580,10 @@ h2 {
   flex-wrap: wrap;
   max-width: 96%;
   margin: 8rem auto; }
+
+.profile-pic {
+  width: 100px;
+  display: inline; }
 
 .what-we-do-left {
   position: relative;
@@ -644,8 +648,7 @@ h2 {
     flex-wrap: wrap;
     font-weight: 900; }
   .navbar-logo-img {
-    width: 113px;
-    height: 56px; }
+    width: 100px; }
   .navbar-buttons {
     display: flex;
     justify-content: end;
@@ -661,8 +664,7 @@ h2 {
 
 .web-dev-guy {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 256px;
   bottom: 0;
   left: 5%; }
 
