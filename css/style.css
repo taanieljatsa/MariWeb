@@ -370,7 +370,6 @@ h2 {
 
 .main-pic {
   width: 272px;
-  height: 400px;
   border-radius: 2px; }
 
 .pic-1 {
@@ -409,8 +408,7 @@ h2 {
   .border-2:before {
     display: none; }
   .main-pic {
-    width: 240px;
-    height: 353px; } }
+    width: 240px; } }
 
 .hidden {
   will-change: transform;
