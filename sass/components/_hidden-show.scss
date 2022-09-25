@@ -1,6 +1,7 @@
 .hidden {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 0;
-  filter: blur(5px);
   // scale: 0.9;
   transform: scale(0.9);
   transform: translateY(20%);
@@ -8,8 +9,9 @@
 }
 
 .show {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 1;
-  filter: blur(0);
   // scale: 1;
   transform: scale(1);
   transform: translateY(0);
@@ -19,6 +21,8 @@
 .hidden-btn-1 {
   // scale: 0;
   // translate: 105px 40px;
+  will-change: transform;
+  transform: translateZ(0);
   transform: translate(105px, 40px) scale(0);
   transition: all 1s;
   opacity: 0;
@@ -27,12 +31,16 @@
 .show-btn-1 {
   // scale: 1;
   // translate: 0;
+  will-change: transform;
+  transform: translateZ(0);
   transform: translate(0) scale(1);
   opacity: 1;
 }
 
 .hidden-btn-2 {
   // rotate: -360deg;
+  will-change: transform;
+  transform: translateZ(0);
   transform: rotate(-360deg);
   transform-origin: center;
   transition: all 2s ease-out;
@@ -40,11 +48,15 @@
 
 .show-btn-2 {
   // rotate: 0deg;
+  will-change: transform;
+  transform: translateZ(0);
   transform: rotate(0);
 }
 
 .hidden-btn-2-border {
   // rotate: 180deg;
+  will-change: transform;
+  transform: translateZ(0);
   transform: rotate(180deg);
   transform-origin: right;
   transition: all 2s ease-out;
@@ -52,41 +64,59 @@
 
 .show-btn-2-border {
   // rotate: 0deg;
+  will-change: transform;
+  transform: translateZ(0);
   transform: rotate(0);
 }
 
 .hidden-btn-3 {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 0;
 }
 
 .show-btn-3 {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 1;
   animation: animatedBtn-3 2s ease-in 1;
 }
 
 .hidden-btn-3-border {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 0;
 }
 
 .show-btn-3-border {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 1;
   animation: animatedBtn-3-border 2s ease-in 1;
 }
 
 .hidden-btn-4 {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 0;
 }
 
 .show-btn-4 {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 1;
   animation: animatedBtn-4 3s ease-in-out 1;
 }
 
 .hidden-btn-4-border {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 0;
 }
 
 .show-btn-4-border {
+  will-change: transform;
+  transform: translateZ(0);
   opacity: 1;
   animation: animatedBtn-4-border 3s ease-in-out 1;
 }
