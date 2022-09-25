@@ -529,12 +529,6 @@ h2 {
     background: linear-gradient(to bottom, #cbd8c8, #cbd8c8 50%, #ffe872 50%);
     animation: stripeInLeft 1s ease-in 0.75s backwards; }
 
-.web-design-girl {
-  position: absolute;
-  width: 400px;
-  top: 60%;
-  left: 60%; }
-
 @media (max-width: 1024px) {
   .heading-primary-sub-2 {
     padding-right: 0; }
@@ -642,6 +636,9 @@ h2 {
     flex: 1;
     flex-wrap: wrap;
     font-weight: 900; }
+  .navbar-logo-img {
+    width: 113px;
+    height: 56px; }
   .navbar-buttons {
     display: flex;
     justify-content: end;
@@ -651,15 +648,6 @@ h2 {
     text-decoration: none;
     text-transform: lowercase;
     color: #212121; }
-
-.web-dev-div-guy {
-  position: relative; }
-
-.web-dev-guy {
-  position: absolute;
-  width: 400px;
-  bottom: 0;
-  left: 0; }
 
 .footer-section {
   background-color: #cbd8c8;
