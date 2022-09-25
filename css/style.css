@@ -531,9 +531,9 @@ h2 {
 
 .web-design-girl {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 66%;
+  width: 256px;
+  height: 256px;
+  top: 65.5%;
   left: 64%;
   transform: rotateZ(-6deg); }
 
@@ -573,6 +573,12 @@ h2 {
     margin: 2rem 0; }
   .product-page-text-box p {
     line-height: 3rem; }
+
+@media (max-width: 1024px) {
+  .product-page-picture,
+  .product-page-picture-cards,
+  .product-page-picture-cards-2 {
+    width: 80%; } }
 
 .what-we-do {
   position: relative;
@@ -665,6 +671,7 @@ h2 {
 .web-dev-guy {
   position: absolute;
   width: 256px;
+  height: 192px;
   bottom: 0;
   left: 5%; }
 
@@ -686,7 +693,7 @@ h2 {
   .copyright {
     text-align: center; }
   .web-dev-guy {
-    width: 40%; } }
+    size: 40%; } }
 
 .footer {
   display: flex;

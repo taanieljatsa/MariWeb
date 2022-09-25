@@ -36,3 +36,11 @@
     line-height: 3rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .product-page-picture,
+  .product-page-picture-cards,
+  .product-page-picture-cards-2 {
+    width: 80%;
+  }
+}
