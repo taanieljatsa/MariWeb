@@ -288,41 +288,41 @@
 @keyframes bouncyBall {
   0% {
     opacity: 0;
-    transform: skew(20deg, -25deg) translate(0, -2rem);
+    transform: skew(20deg, -25deg) translate(0, -2rem) scale(1.01);
   }
 
   12% {
     opacity: 1;
-    transform: skew(10deg, -15deg) translate(0, 0rem);
+    transform: skew(10deg, -15deg) translate(0, 0rem) scale(1);
   }
 
   25% {
-    transform: skew(20deg, -25deg) translate(0, -1rem);
+    transform: skew(20deg, -25deg) translate(0, -1rem) scale(1.008);
   }
 
   37% {
-    transform: skew(15deg, -20deg) translate(0, 0rem);
+    transform: skew(15deg, -20deg) translate(0, 0rem) scale(1);
   }
 
   50% {
-    transform: skew(20deg, -25deg) translate(0, -0.5rem);
+    transform: skew(20deg, -25deg) translate(0, -0.5rem) scale(1.006);
   }
 
   62% {
-    transform: skew(18deg, -23deg) translate(0, 0rem);
+    transform: skew(18deg, -23deg) translate(0, 0rem) scale(1);
   }
 
   75% {
-    transform: skew(20deg, -25deg) translate(0, -0.25rem);
+    transform: skew(20deg, -25deg) translate(0, -0.25rem) scale(1.004);
   }
 
   87% {
-    transform: skew(20deg, -25deg) translate(0, 0rem);
+    transform: skew(20deg, -25deg) translate(0, 0rem) scale(1.002);
   }
 
   100% {
     // transform: skew(3deg, 3deg);
-    transform: skew(20deg, -25deg) translate(0, 0);
+    transform: skew(20deg, -25deg) translate(0, 0) scale(1);
   }
 }
 

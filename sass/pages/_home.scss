@@ -54,7 +54,7 @@
     );
     z-index: -10;
     transform: skew(20deg, -25deg);
-    animation: bouncyBall 4.5s ease-out backwards;
+    animation: bouncyBall 4.5s ease-out;
   }
 
   &::after {
