@@ -10,6 +10,15 @@ h2 {
   font-size: 1.4rem;
 }
 
+h3 {
+  background-color: $color-primary;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
 .heading-primary {
   line-height: 7rem;
   animation: moveInTop 1s ease-in backwards;

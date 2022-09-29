@@ -1,12 +1,28 @@
-.web-dev-div-guy {
+// .web-dev-div-guy {
+//   position: relative;
+// }
+
+.what-we-do-left {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 30rem;
+}
+
+.web-design-girl {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 10%;
+  transform: rotateZ(-6deg);
 }
 
 .web-dev-guy {
   position: absolute;
   width: 256px;
   height: 192px;
-  bottom: 0;
+  bottom: 10%;
   left: 5%;
 }
 
@@ -30,9 +46,12 @@
   .copyright {
     text-align: center;
   }
+  .web-design-girl {
+    transform: scale(0.6) translate(-30%, -50%);
+  }
 
   .web-dev-guy {
-    size: 40%;
+    transform: scale(0.6) translate(-30%, 50%);
   }
 }
 

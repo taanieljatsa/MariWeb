@@ -21,6 +21,15 @@
   top: -15rem;
 }
 
+.product-page-header {
+  position: relative;
+  background-color: $color-primary;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  // padding-top: 10px;
+}
+
 .product-page-text-box {
   text-align: center;
   width: clamp(20ch, 80%, 80ch);
