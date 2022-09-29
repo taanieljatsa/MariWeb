@@ -25,21 +25,8 @@
   }
 }
 
-.web-design-girl {
-  position: absolute;
-  width: 256px;
-  height: 256px;
-  top: 65.5%;
-  left: 64%;
-  transform: rotateZ(-6deg);
-}
-
 @media (max-width: 1024px) {
   .heading-primary-sub-2 {
     padding-right: 0;
-  }
-
-  .web-design-girl {
-    display: none;
   }
 }
