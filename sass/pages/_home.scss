@@ -32,11 +32,14 @@
   max-width: 25rem;
   font-weight: 700;
   text-align: center;
+  perspective: 1700px;
   transform: skewX(-10deg) skewY(15deg);
 
   &::before {
     content: "";
     position: absolute;
+    will-change: transform;
+    transform: translateZ(0);
     top: -6rem;
     left: 2rem;
     height: 200px;
@@ -51,17 +54,21 @@
     );
     z-index: -10;
     transform: skew(20deg, -25deg);
+    animation: bouncyBall 4.5s ease-out backwards;
   }
 
   &::after {
     content: "";
     position: absolute;
+    will-change: transform;
+    transform: translateZ(0);
     bottom: -6rem;
     left: 15rem;
     width: 4rem;
     box-shadow: 0 -30px 30px 25px $color-grey;
     transform: skew(-5deg, -20deg) scale(1.5);
     z-index: -100;
+    animation: bouncyBallShadow 4.5s ease-out;
   }
 }
 
@@ -71,6 +78,6 @@
   }
 
   .get-ready-div {
-    transform: translate(55%, 55%) skewX(-10deg) skewY(15deg) scale(0.4);
+    transform: translate(55%, 55%) skew(-10deg, 15deg) scale(0.4);
   }
 }
