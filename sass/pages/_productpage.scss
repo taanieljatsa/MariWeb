@@ -27,13 +27,13 @@
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
-  // padding-top: 10px;
+  padding-top: 4rem;
 }
 
 .product-page-text-box {
   text-align: center;
   width: clamp(20ch, 80%, 80ch);
-  margin: 8rem auto 0;
+  margin: 0 auto;
   padding: 0 0 20rem;
   height: calc(100% - 50px);
 
