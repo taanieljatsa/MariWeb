@@ -1,0 +1,138 @@
+dialog {
+  display: grid;
+  justify-items: center;
+  border: none;
+  border-radius: 10px;
+  width: clamp(10ch, 90%, 80ch);
+  min-height: 50ch;
+  margin: auto auto;
+  padding: 2rem;
+  background-color: rgba(darken($color-primary, 20%), 0.5);
+  box-shadow: inset 0 0 30px 20px rgba(darken($color-primary, 5%), 1),
+    0 0 20px 20px rgba(darken($color-primary, 5%), 1);
+  backdrop-filter: blur(8px);
+}
+
+.modal::backdrop {
+  background-color: hsla(109, 17%, 82%, 0.2);
+}
+
+.yellow-stripe-inner-modal {
+  position: relative;
+
+  & a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: $color-text-dark;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+.yellow-stripe-outer-modal {
+  position: relative;
+  display: inline-block;
+  padding-right: 0.8rem;
+  margin-right: -0.84rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    will-change: transform;
+    transform: translateZ(0);
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($color-secondary, 0.9);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.modal-logo-img {
+  width: 7rem;
+}
+
+.close-modal {
+  width: 3rem;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.contact-form-btn-div {
+  position: relative;
+  display: flex;
+  width: clamp(10ch, 80vw, 60ch);
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: $color-primary;
+}
+
+.contact-icons-label {
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  max-width: 6rem;
+  text-align: center;
+}
+
+.icon-phone {
+  width: 5.5rem;
+}
+
+.icon-whats {
+  width: 5.7rem;
+}
+
+.icon-mail {
+  width: 7rem;
+}
+
+.icons {
+  display: block;
+  margin: 2rem auto;
+}
+
+.icons:hover {
+  transform: scale(1.1) translateY(-0.5rem);
+}
+
+input {
+  width: 70%;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border: none;
+  display: block;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: 0 0 4px 1px rgba(lighten($color-primary, 5%), 1);
+  }
+}
+
+.contact-form-message {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 70%;
+  border: none;
+}
+
+textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 4px 1px rgba(lighten($color-primary, 5%), 1);
+}
+
+.btn-submit-border {
+  margin-left: 15%;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>MariWeb</title>
+
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -25,7 +26,9 @@
 
           <div class="yellow-stripe-outer">
             <div class="yellow-stripe-inner">
-              <a href="#" class="navbar-in-touch">get in touch</a>
+              <a href="#" id="open-modal" class="navbar-in-touch"
+                >get in touch</a
+              >
             </div>
           </div>
         </div>
@@ -261,5 +264,63 @@
       </div>
       <div class="copyright">© All right reserved – mari.</div>
     </section>
+    <dialog class="modal" id="modal">
+      <div class="modal-header">
+        <a href="#" class="modal-logo"
+          ><img class="modal-logo-img" src="img/logo.svg" alt=""
+        /></a>
+        <div class="yellow-stripe-outer-modal">
+          <div class="yellow-stripe-inner-modal">
+            <a href="#" class="navbar-in-touch">get in touch</a>
+          </div>
+        </div>
+        <a href="#"
+          ><img
+            class="close-modal"
+            id="close-modal"
+            src="img/modal-close-cross.svg"
+            alt=""
+        /></a>
+      </div>
+      <form>
+        <div class="contact-form-btn-div">
+          <label class="contact-icons-label"
+            >direct call<a href="#" class="navbar-in-touch"
+              ><img class="icons icon-phone" src="img/phone.svg" alt="" /></a
+          ></label>
+
+          <label class="contact-icons-label"
+            >direct whatsapp<a href="#" class="navbar-in-touch"
+              ><img class="icons icon-whats" src="img/whatsapp.svg" alt="" /></a
+          ></label>
+
+          <label class="contact-icons-label"
+            >direct mail<a href="#" class="navbar-in-touch"
+              ><img class="icons icon-mail" src="img/e-mail.svg" alt="" /></a
+          ></label>
+        </div>
+
+        <div class="modal-contact-form-text-box">
+          <input
+            type="email"
+            name="clientMail"
+            placeholder="YOUR E-MAIL"
+            id="client-mail"
+          />
+          <textarea
+            id="message"
+            name="clientMessage"
+            class="contact-form-message"
+            rows="10"
+            placeholder="OR SEND YOUR MESSAGE HERE"
+            required
+          ></textarea>
+        </div>
+        <div class="btn-border btn-submit-border">
+          <a class="btn btn-submit" href="#">submit</a>
+        </div>
+      </form>
+    </dialog>
+    <script src="modal.js"></script>
   </body>
 </html>
