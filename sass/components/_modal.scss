@@ -1,9 +1,7 @@
 dialog {
-  display: grid;
-  justify-items: center;
   border: none;
   border-radius: 10px;
-  width: clamp(10ch, 90%, 80ch);
+  width: clamp(10ch, 90%, 70ch);
   min-height: 50ch;
   margin: auto auto;
   padding: 2rem;
@@ -70,19 +68,23 @@ dialog {
 .contact-form-btn-div {
   position: relative;
   display: flex;
-  width: clamp(10ch, 80vw, 60ch);
+  width: 90%;
   flex-wrap: nowrap;
   justify-content: space-around;
   background-color: $color-primary;
+  margin: 0 auto;
 }
 
 .contact-icons-label {
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 700;
   position: relative;
   display: block;
-  max-width: 6rem;
+  max-width: 15rem;
   text-align: center;
+  padding: 2rem;
+  letter-spacing: 0.5rem;
 }
 
 .icon-phone {
