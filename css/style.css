@@ -641,10 +641,9 @@ dialog {
   font-weight: 700;
   position: relative;
   display: block;
-  max-width: 15rem;
+  max-width: 13rem;
   text-align: center;
   padding: 2rem;
-  margin: 0 0.1rem;
   letter-spacing: 0.5rem; }
 
 .icon-phone {
@@ -658,8 +657,7 @@ dialog {
 
 .icons {
   display: block;
-  margin: 2rem auto;
-  padding: 0 0.5rem; }
+  margin: 2rem auto; }
 
 .icons:hover {
   transform: scale(1.1) translateY(-0.5rem); }
