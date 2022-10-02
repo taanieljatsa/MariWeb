@@ -576,9 +576,8 @@ dialog {
   border: none;
   border-radius: 10px;
   width: clamp(10ch, 90%, 70ch);
-  min-height: 50ch;
   margin: auto auto;
-  padding: 2rem;
+  padding: 2rem calc((100% - 96%) / 2);
   background-color: rgba(147, 174, 140, 0.5);
   box-shadow: inset 0 0 30px 20px #bdcdb9, 0 0 20px 20px #bdcdb9;
   backdrop-filter: blur(8px); }
@@ -592,7 +591,7 @@ dialog {
     text-decoration: none;
     text-transform: lowercase;
     color: #212121;
-    font-size: 3rem;
+    font-size: clamp(2.5rem, calc(2rem + 1.33vw), 3rem);
     font-weight: 700; }
 
 .yellow-stripe-outer-modal {
@@ -614,23 +613,25 @@ dialog {
 .modal-header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 96%;
   margin: 0 auto 2rem; }
 
 .modal-logo-img {
   width: 7rem; }
 
 .close-modal {
-  width: 3rem; }
+  width: 3rem;
+  display: block;
+  margin-left: 4rem; }
   .close-modal:hover {
-    transform: scale(1.01); }
+    transform: scale(1.03); }
 
 .contact-form-btn-div {
   position: relative;
   display: flex;
-  width: 90%;
+  width: 96%;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #cbd8c8;
   margin: 0 auto; }
 
@@ -656,7 +657,8 @@ dialog {
 
 .icons {
   display: block;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  padding: 0 0.5rem; }
 
 .icons:hover {
   transform: scale(1.1) translateY(-0.5rem); }
