@@ -78,9 +78,12 @@ dialog {
 }
 
 @media (max-width: 700px) {
+  dialog {
+    padding: 2rem 0;
+  }
+
   .contact-form-btn-div {
     width: 100%;
-    justify-content: space-evenly;
   }
 }
 
