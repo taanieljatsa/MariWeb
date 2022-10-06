@@ -4,7 +4,6 @@ dialog {
   width: clamp(10ch, 99%, 70ch);
   margin: auto auto;
   padding: 2rem calc((100% - 98%) / 2);
-  // padding: 2rem 0;
   background-color: rgba(darken($color-primary, 20%), 0.5);
   box-shadow: inset 0 0 30px 20px rgba(darken($color-primary, 5%), 1),
     0 0 20px 20px rgba(darken($color-primary, 5%), 1);
@@ -77,26 +76,15 @@ dialog {
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
-  dialog {
-    padding: 2rem 0;
-  }
-
-  .contact-form-btn-div {
-    width: 100%;
-  }
-}
-
 .contact-icons-label {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   position: relative;
   display: block;
-  max-width: 13rem;
+  max-width: 9rem;
   text-align: center;
-  padding: 2rem;
-  // margin: 0 0.1rem;
+  padding: 2rem 0;
   letter-spacing: 0.5rem;
 }
 

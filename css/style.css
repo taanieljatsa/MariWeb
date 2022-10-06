@@ -635,21 +635,15 @@ dialog {
   background-color: #cbd8c8;
   margin: 0 auto; }
 
-@media (max-width: 700px) {
-  dialog {
-    padding: 2rem 0; }
-  .contact-form-btn-div {
-    width: 100%; } }
-
 .contact-icons-label {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   position: relative;
   display: block;
-  max-width: 13rem;
+  max-width: 9rem;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
   letter-spacing: 0.5rem; }
 
 .icon-phone {
