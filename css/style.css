@@ -631,7 +631,7 @@ dialog {
   display: flex;
   width: 98%;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #cbd8c8;
   margin: 0 auto; }
 
@@ -663,7 +663,7 @@ dialog {
   transform: scale(1.1) translateY(-0.5rem); }
 
 input {
-  width: 70%;
+  width: 75%;
   margin: 2rem auto 0;
   padding: 1rem;
   border: none;
@@ -678,7 +678,7 @@ input {
   display: block;
   padding: 1rem;
   margin: 2rem auto;
-  width: 70%;
+  width: 75%;
   border: none;
   border-radius: 2px; }
 

@@ -71,7 +71,8 @@ dialog {
   display: flex;
   width: 98%;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: space-around;
   background-color: $color-primary;
   margin: 0 auto;
 }
@@ -110,7 +111,7 @@ dialog {
 }
 
 input {
-  width: 70%;
+  width: 75%;
   margin: 2rem auto 0;
   padding: 1rem;
   border: none;
@@ -128,7 +129,7 @@ input {
   display: block;
   padding: 1rem;
   margin: 2rem auto;
-  width: 70%;
+  width: 75%;
   border: none;
   border-radius: 2px;
 }
