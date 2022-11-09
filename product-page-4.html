@@ -4,9 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>MariWeb</title>
-    <script defer src="app.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <script defer src="animations.js"></script>
   </head>
   <body>
     <header class="header">
@@ -30,43 +103,88 @@
           </div>
         </div>
       </div>
-      <!-- <div class="product-page-text-box">
-        <h2>project showcase</h2>
-        <h1>Business card design</h1>
-        <p>
-          Businesscards are still very much in. It shows that you are a
-          proffesional and will go the extra mile. Get your unique custom
-          businesscard design with your logo and company information today! And
-          remember if you need a logo we can help you get that sorted out also.
-          Have a look of some of the designs we made.
-        </p>
-      </div> -->
     </header>
-    <div class="product-page-header">
+    <div class="product-page-hero">
       <div class="product-page-text-box">
         <h2>project showcase</h2>
-        <h1>Business card design</h1>
+        <h1>Logos, flyers & busness card designs</h1>
         <p>
-          Businesscards are still very much in. It shows that you are a
-          proffesional and will go the extra mile. Get your unique custom
-          businesscard design with your logo and company information today! And
+          Business cards are still very much in. It shows that you are a
+          professional and will go the extra mile. Get your unique custom
+          business card design with your logo and company information today! And
           remember if you need a logo we can help you get that sorted out also.
           Have a look of some of the designs we made.
         </p>
       </div>
     </div>
 
-    <div class="main-section-product-pages">
-      <img
-        class="hidden product-page-picture-cards"
-        src="img/visiitkaart3.webp"
-        alt=""
-      />
-      <img
-        class="hidden product-page-picture-cards-2"
-        src="img/mariweb-project.webp"
-        alt=""
-      />
+    <div class="main-section-product-page">
+      <div class="product-page-row-wrapper">
+        <div class="col-left">
+          <h2 class="u-margin-bottom-medium">latest work</h2>
+          <h1 class="u-margin-bottom-medium">Services in Malaga</h1>
+          <h3>Flyer</h3>
+          <h3>business card</h3>
+          <p>
+            Logo, flayer and busnesscard design for car rent, transfeer and car
+            service company.
+          </p>
+          <br />
+        </div>
+        <div class="col-right">
+          <img
+            class="product-page-business"
+            src="/img/services-in-malaga-business-2.png"
+            alt=""
+          />
+          <img
+            class="product-page-flyer"
+            src="/img/services-in-malaga-flyer.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="product-page-row-wrapper">
+        <div class="col-left">
+          <h2 class="u-margin-bottom-medium">latest work</h2>
+          <h1 class="u-margin-bottom-medium">CarBuy</h1>
+
+          <p>Logo, flyer and business card design for CarBuy</p>
+          <br />
+        </div>
+        <div class="col-right">
+          <img
+            class="product-page-business"
+            src="/img/carbuy-business-card.png"
+            alt=""
+          />
+          <img class="product-page-flyer" src="/img/carbuy-flyer.png" alt="" />
+        </div>
+      </div>
+
+      <div class="product-page-row-wrapper">
+        <div class="col-left">
+          <h2 class="u-margin-bottom-medium">latest work</h2>
+          <h1 class="u-margin-bottom-medium">MariWeb</h1>
+          <h3>Our logo</h3>
+          <h3>Our business card</h3>
+          <p></p>
+          <br />
+        </div>
+        <div class="col-right">
+          <img
+            class="product-page-business"
+            src="/img/mariweb-business-card.png"
+            alt=""
+          />
+          <img
+            class="product-page-flyer product-page-logo"
+            src="/img/mariweb-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
 
     <section class="hidden footer-section">

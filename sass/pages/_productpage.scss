@@ -1,32 +1,20 @@
 .product-page-picture {
+  display: block;
   width: 912px;
   border-radius: 2px;
   box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
   align-self: center;
+  margin-bottom: 10rem;
+  @include respond(tab-land) {
+    width: 80%;
+  }
 }
 
-.product-page-picture-cards,
-.product-page-picture-cards-2 {
-  width: 912px;
-  border-radius: 2px;
-  box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
-  margin: 0 auto;
-}
-
-.main-section-product-pages {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: relative;
-  top: -15rem;
-}
-
-.product-page-header {
+.product-page-hero {
   position: relative;
   background-color: $color-primary;
   max-width: $max-width;
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
   padding-top: 4rem;
 }
 
@@ -35,8 +23,6 @@
   width: clamp(20ch, 80%, 80ch);
   margin: 0 auto;
   padding: 0 0 20rem;
-  height: calc(100% - 50px);
-
   & > * {
     margin: 2rem 0;
   }
@@ -46,10 +32,122 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .product-page-picture,
-  .product-page-picture-cards,
-  .product-page-picture-cards-2 {
-    width: 80%;
+// product-page-5-layout
+
+.main-section-product-page {
+  width: $max-width;
+  margin-inline: auto;
+  position: relative;
+}
+
+.product-page-row-wrapper {
+  display: flex;
+  max-width: 80%;
+  margin: 10rem auto;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap-reverse;
+    margin: 15rem auto;
   }
+}
+
+.col-left {
+  position: relative;
+  width: clamp(30ch, 30%, 80ch);
+  margin: auto 0;
+
+  @include respond(tab-port) {
+    margin: 5rem auto;
+    text-align: center;
+  }
+}
+
+.col-right {
+  position: relative;
+  width: clamp(30ch, 90%, 50ch);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 45rem;
+
+  @include respond(tab-port) {
+    margin: 5rem auto;
+    justify-content: center;
+    min-height: 25rem;
+  }
+
+  @include respond(phone) {
+    min-height: 10rem;
+  }
+}
+
+.carbuy-product-img {
+  width: 70%;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.hover-swap {
+  width: fit-content;
+}
+
+.carbuy-logo {
+  border-radius: 100%;
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+}
+
+.img-top {
+  border: solid 1px $color-text-light;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease;
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+}
+
+.hover-swap:hover .img-top {
+  opacity: 1;
+}
+
+.carbuy-product-img:hover {
+  width: 80%;
+  transition: all 0.2s ease;
+  box-shadow: 15px 15px 20px 0 hsl(0, 0%, 50%), 30px 30px 20px 0 hsl(0, 0%, 90%);
+}
+
+.product-page-business {
+  width: 40%;
+  position: absolute;
+  left: 5%;
+  bottom: -10%;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.product-page-business:hover {
+  width: 50%;
+}
+
+.product-page-flyer {
+  width: 80%;
+  transition: all 0.2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.product-page-flyer:hover {
+  width: 100%;
+  z-index: 1;
+  box-shadow: 15px 15px 20px 0 hsl(0, 0%, 50%), 30px 30px 20px 0 hsl(0, 0%, 90%);
+}
+
+.product-page-logo {
+  border-radius: 100%;
 }

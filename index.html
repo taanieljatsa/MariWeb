@@ -6,19 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>MariWeb</title>
-
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <script defer src="animations.js"></script>
   </head>
+  <script>
+    function sendMail() {
+      const eMail = document.getElementById("client-mail").value;
+      const message = document.getElementById("client-message").value;
+      const data = {
+        eMail: eMail,
+        message: message,
+      };
+      fetch("/get-in-touch", {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          alert("E-mail sent");
+        });
+    }
+  </script>
   <body>
     <header class="header">
-      <div class="navbar">
-        <div class="navbar-logo-box">
-          <a href="#" class="navbar-logo"
-            ><img class="navbar-logo-img" src="img/logo.svg" alt=""
+      <div class="nav">
+        <div class="nav-logo-box">
+          <a href="#" class="nav-logo"
+            ><img class="nav-logo-img" src="img/logo.svg" alt=""
           /></a>
         </div>
-        <div class="navbar-buttons">
-          <div class="yellow-stripe-outer">
+        <div class="nav-menu">
+          <div class="yellow-stripe-outer test">
             <div class="yellow-stripe-inner">
               <a href="#our-work" class="navbar-my-work">our work</a>
             </div>
@@ -32,9 +125,15 @@
             </div>
           </div>
         </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
-
-      <div class="header-text-box">
+    </header>
+    <div class="main-page-hero">
+      <div class="hero-text-box">
         <h1 class="heading-primary">
           Hi, we are
           <div class="yellow-stripe-outer">
@@ -51,7 +150,7 @@
             <div class="yellow-stripe-inner">Designer</div>
           </div>
 
-          and Web
+          & Web
           <div class="yellow-stripe-outer">
             <div class="yellow-stripe-inner">Developer</div>
           </div>
@@ -61,7 +160,7 @@
           your customer, make it count!
         </p>
         <p class="heading-primary-sub-2">
-          We design and build beautiful websites for businesses . If you need a
+          We design and build beautiful websites for businesses. If you need a
           modern and powerful webpage, send us an email and we will give you
           time and cost estimate.
         </p>
@@ -70,22 +169,17 @@
           <a class="btn btn-animated" href="#our-work">see our work</a>
         </div>
       </div>
-      <div class="get-ready-div">
-        <p>
-          But first have fun on our page, it can get pretty wild, remember that
-          it is a portfolio website so we show you what we can do.
-        </p>
-      </div>
+
       <div class="stripe-scroll"><div class="scroll">scroll</div></div>
-    </header>
+    </div>
 
     <div class="our-work-section" id="our-work">
       <div class="hidden work-section-container">
         <div class="work-introduction-side">
           <h2 class="u-margin-bottom-medium">latest work</h2>
-          <h1 class="u-margin-bottom-medium">Malaga Cakes</h1>
+          <h1 class="u-margin-bottom-medium">Heal Yoga</h1>
           <h3>Website design</h3>
-          <h3>Custom built website</h3>
+          <h3>Available for purchase</h3>
           <br />
           <div class="hidden btn-border u-margin-top-large">
             <a class="hidden-btn-1 btn" href="product-page-1.html"
@@ -97,16 +191,8 @@
         <div class="hidden border-1">
           <div class="hidden border-2">
             <div class="work-pictures-side">
-              <img
-                class="main-pic pic-1"
-                src="img/malaga-cakes-main-1.webp"
-                alt=""
-              />
-              <img
-                class="main-pic pic-2"
-                src="img/malaga-cakes-main-2.webp"
-                alt=""
-              />
+              <img class="main-pic pic-1" src="img/healyoga-1.png" alt="" />
+              <img class="main-pic pic-2" src="img/healyoga-2.png" alt="" />
             </div>
           </div>
         </div>
@@ -115,8 +201,10 @@
       <div class="hidden work-section-container">
         <div class="work-introduction-side">
           <h2 class="u-margin-bottom-medium">latest work</h2>
-          <h1 class="u-margin-bottom-medium">Royal Carcheck24</h1>
+          <h1 class="u-margin-bottom-medium">CarBuy</h1>
           <h3>Website design</h3>
+          <h3>Brand design</h3>
+          <h3>Wix website build</h3>
           <br />
           <div class="btn-border hidden-btn-2-border u-margin-top-large">
             <a class="btn hidden-btn-2" href="product-page-2.html"
@@ -129,14 +217,10 @@
             <div class="work-pictures-side">
               <img
                 class="main-pic pic-1"
-                src="img/royalcar-main-2.webp"
+                src="img/carbuy-website-img.png"
                 alt=""
               />
-              <img
-                class="main-pic pic-2"
-                src="img/royalcar-main-1.webp"
-                alt=""
-              />
+              <img class="main-pic pic-2" src="img/carbuy-flyer.png" alt="" />
             </div>
           </div>
         </div>
@@ -145,48 +229,49 @@
       <div class="hidden work-section-container">
         <div class="work-introduction-side">
           <h2 class="u-margin-bottom-medium">latest work</h2>
-          <h1 class="u-margin-bottom-medium">Team website</h1>
-          <h3>Website design</h3>
+          <h1 class="u-margin-bottom-medium">Salotto</h1>
+          <h3>Web development</h3>
           <br />
           <div class="btn-border hidden-btn-3-border u-margin-top-large">
-            <a class="btn hidden-btn-3" href="product-page-3.html"
-              >see this project</a
-            >
+            <a class="btn hidden-btn-3" href="product-page-3.html">see live</a>
           </div>
         </div>
         <div class="hidden border-1">
           <div class="hidden border-2">
             <div class="work-pictures-side">
-              <img class="main-pic pic-1" src="img/team-main-1.webp" alt="" />
-              <img class="main-pic pic-2" src="img/team-main-2.webp" alt="" />
+              <img class="main-pic pic-1" src="img/salotto-1.png" alt="" />
+              <img class="main-pic pic-2" src="img/salotto-2.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="work-section-container">
-      <div class="hidden work-introduction-side">
-        <h2 class="u-margin-bottom-medium">latest work</h2>
-        <h1 class="u-margin-bottom-medium">Business card design</h1>
-        <h3>Logo design</h3>
-        <h3>Businesscard design</h3>
-        <br />
-        <div class="btn-border hidden-btn-4-border u-margin-top-large">
-          <a class="btn hidden-btn-4" href="product-page-4.html"
-            >see this project</a
-          >
+      <div class="work-section-container">
+        <div class="hidden work-introduction-side">
+          <h2 class="u-margin-bottom-medium">latest work</h2>
+          <h1 class="u-margin-bottom-medium">Logos, flyers & business cards</h1>
+          <h3>Modern</h3>
+          <h3>Stylish</h3>
+          <br />
+          <div class="btn-border hidden-btn-4-border u-margin-top-large">
+            <a class="btn hidden-btn-4" href="product-page-4.html"
+              >see the designs</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="hidden border-1 animated-dots-3">
-        <div class="hidden border-2 animated-dots-4">
-          <div class="work-pictures-side">
-            <img class="main-pic pic-1" src="img/mariweb-card-1.webp" alt="" />
-            <img
-              class="main-pic pic-2"
-              src="img/services-in-malaga-main-1.webp"
-              alt=""
-            />
+        <div class="hidden border-1 animated-dots-3">
+          <div class="hidden border-2 animated-dots-4">
+            <div class="work-pictures-side">
+              <img
+                class="main-pic pic-1"
+                src="img/services-in-malaga-business-2.png"
+                alt=""
+              />
+              <img
+                class="main-pic pic-2"
+                src="img/services-in-malaga-flyer.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -231,8 +316,10 @@
           <h2 class="u-margin-bottom-small">Development</h2>
           <p>
             Taaniel builds clean coded responsive websites. He will add some
-            cool interactions to make the page stand out and look modern. He
-            makes sure that your site runs smoothly on every device and is a
+            cool interactions to make the page stand out and look modern. Most
+            importantly, he makes sure your website works on every device, from
+            big screen desktops to all the mobile phone screens we have around.
+            He makes sure that your site runs smoothly on every device and is a
             pleasant experience for your customer.
           </p>
         </div>
@@ -287,7 +374,7 @@
             alt=""
         /></a>
       </div>
-      <form>
+      <form action="/get-in-touch">
         <div class="contact-form-btn-div">
           <label class="contact-icons-label"
             >direct call<a
@@ -320,9 +407,10 @@
             name="clientMail"
             placeholder="YOUR E-MAIL"
             id="client-mail"
+            required
           />
           <textarea
-            id="message"
+            id="client-message"
             name="clientMessage"
             class="contact-form-message"
             rows="10"
@@ -331,7 +419,7 @@
           ></textarea>
         </div>
         <div class="btn-border btn-submit-border">
-          <a class="btn btn-submit" href="#">submit</a>
+          <a onclick="sendMail()" class="btn btn-submit" href="#">submit</a>
         </div>
       </form>
     </dialog>

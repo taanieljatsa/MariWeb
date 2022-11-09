@@ -25,8 +25,10 @@
 .footer-section {
   background-color: $color-primary;
   min-height: 300px;
-  padding-left: $margin-top-bottom;
-  padding-right: $margin-top-bottom;
+  max-width: $max-width;
+  margin-bottom: $margin-top-bottom;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .copyright {

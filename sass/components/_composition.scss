@@ -1,22 +1,26 @@
+.our-work-section {
+  width: $max-width;
+  margin-inline: auto;
+}
+
 .work-section-container {
   position: relative;
   display: flex;
   flex-wrap: wrap-reverse;
-  max-width: $max-width;
   margin: 6rem auto;
 }
 
 .work-introduction-side {
   position: relative;
-  width: clamp(30ch, 30%, 80ch);
-  margin: 0 auto;
+  width: clamp(35ch, 90%, 50ch);
+  margin: auto;
   padding: 6rem 0;
   overflow: hidden;
 }
 
 .border-1 {
   position: relative;
-  width: clamp(20ch, 30%, 80ch);
+  width: 45ch;
   min-height: 40rem;
   background-color: $color-primary;
   margin: 8rem auto;
@@ -96,14 +100,14 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  z-index: 1;
+  z-index: 3;
   box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
 }
 
 .pic-1:hover {
   will-change: transform;
   transform: translateZ(0);
-  transform: scale(1.05);
+  transform: scale(1.00001);
   box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.4);
 }
 
@@ -111,23 +115,24 @@
   position: absolute;
   top: 5%;
   right: 10%;
+  z-index: 2;
 }
 
 .pic-2:hover {
   will-change: transform;
   transform: translateZ(0);
-  transform: scale(1.05);
+  transform: scale(1.00001);
   box-shadow: 0 2.5rem 6rem rgba($color-dark, 0.4);
-  z-index: 2;
+  z-index: 3;
 }
 
-@media (max-width: 1024px) {
-  .border-1 {
-    width: 45ch;
+@include respond(tab-land) {
+  .work-section-container {
+    text-align: center;
   }
 }
 
-@media (max-width: 500px) {
+@include respond(phone) {
   .border-1:before,
   .border-2:before {
     display: none;

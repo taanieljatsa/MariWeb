@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MariWeb</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <script defer src="animations.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-logo-box">
+          <a href="#" class="navbar-logo"
+            ><img class="navbar-logo-img" src="img/logo.svg" alt=""
+          /></a>
+        </div>
+        <div class="navbar-buttons">
+          <div class="yellow-stripe-outer">
+            <div class="yellow-stripe-inner">
+              <a href="#our-work" class="navbar-my-work">our work</a>
+            </div>
+          </div>
+
+          <div class="yellow-stripe-outer">
+            <div class="yellow-stripe-inner">
+              <a href="#" id="open-modal" class="navbar-in-touch"
+                >get in touch</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="product-page-hero">
+      <div class="product-page-text-box">
+        <h2>Design work</h2>
+        <h1>Brand build, design work</h1>
+        <p>
+          Here we have few different examples to show, business card designs,
+          flayer designs and brand builds. Have a look and if you like our style
+          then get in touch!
+        </p>
+      </div>
+    </div>
+
+    <div class="main-section-design-page">
+      <div class="col-left">
+        <h2 class="u-margin-bottom-medium">latest work</h2>
+        <h1 class="u-margin-bottom-medium">Carbuy</h1>
+        <h3>Brand build</h3>
+        <p>
+          Full brand build, we designed the logo, card, flayer and webpage. Page
+          was built in Wix on customers old site. In the pictures you can see
+          previous design for the webpage and when you go live, you will see the
+          page we built. To complete he branding we overhauled all social media,
+          you can search the name in Facebook and see the result. Old designes
+          are seen on the pictures.
+        </p>
+        <br />
+        <div class="hidden btn-border u-margin-top-large">
+          <a
+            class="hidden-btn-1 btn"
+            href="https://www.carbuy.es/"
+            target="”_blank”"
+            >see it live</a
+          >
+        </div>
+      </div>
+      <div class="col-right"></div>
+    </div>
+
+    <section class="hidden footer-section">
+      <div class="footer">
+        <div class="footer-div-left">
+          <h1>
+            Want to
+            <div class="yellow-stripe-outer">
+              <div class="yellow-stripe-inner">work?</div>
+            </div>
+          </h1>
+        </div>
+        <div class="footer-div-right">
+          <p>
+            If you need a modern and powerful website for your business, startup
+            or personally, we are available for work. You can email us directly
+            at
+          </p>
+          <div class="yellow-stripe-outer">
+            <div class="yellow-stripe-inner">
+              <a
+                href="mailto: info@mariweb.eu"
+                class="footer-mail"
+                target="_blank"
+                >info@mariweb.eu</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© All right reserved – mari.</div>
+    </section>
+    <dialog class="modal" id="modal">
+      <div class="modal-header">
+        <a href="#" class="modal-logo"
+          ><img class="modal-logo-img" src="img/logo.svg" alt=""
+        /></a>
+        <div class="yellow-stripe-outer-modal">
+          <div class="yellow-stripe-inner-modal">
+            <a href="#" class="navbar-in-touch">get in touch</a>
+          </div>
+        </div>
+        <a href="#"
+          ><img
+            class="close-modal"
+            id="close-modal"
+            src="img/modal-close-cross.svg"
+            alt=""
+        /></a>
+      </div>
+      <form action="/get-in-touch">
+        <div class="contact-form-btn-div">
+          <label class="contact-icons-label"
+            >direct call<a
+              href="tel:+34628121179"
+              class="navbar-in-touch"
+              target="_blank"
+              ><img class="icons icon-phone" src="img/phone.svg" alt="" /></a
+          ></label>
+
+          <label class="contact-icons-label"
+            >direct whatsapp<a
+              href="https://wa.me/+34628121179"
+              class="navbar-in-touch"
+              target="_blank"
+              ><img class="icons icon-whats" src="img/whatsapp.svg" alt="" /></a
+          ></label>
+
+          <label class="contact-icons-label"
+            >direct mail<a
+              href="mailto: info@mariweb.eu"
+              class="navbar-in-touch"
+              target="_blank"
+              ><img class="icons icon-mail" src="img/e-mail.svg" alt="" /></a
+          ></label>
+        </div>
+
+        <div class="modal-contact-form-text-box">
+          <input
+            type="email"
+            name="clientMail"
+            placeholder="YOUR E-MAIL"
+            id="client-mail"
+          />
+          <textarea
+            id="message"
+            name="clientMessage"
+            class="contact-form-message"
+            rows="10"
+            placeholder="OR SEND YOUR MESSAGE HERE"
+            required
+          ></textarea>
+        </div>
+        <div class="btn-border btn-submit-border">
+          <a class="btn btn-submit" href="#">submit</a>
+        </div>
+      </form>
+    </dialog>
+    <script src="modal.js"></script>
+  </body>
+</html>

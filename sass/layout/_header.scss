@@ -3,16 +3,23 @@
   background-color: $color-primary;
   max-width: $max-width;
   margin-top: $margin-top-bottom;
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
 }
 
-.header-text-box {
-  width: clamp(20ch, 80%, 80ch);
+.main-page-hero {
+  position: relative;
+  background-color: $color-primary;
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-top: 4rem;
+}
+
+.hero-text-box {
+  width: clamp(20ch, 80%, 75ch);
   display: flex;
   position: relative;
   flex-direction: column;
-  margin: max(0, 3%) max(0, 10%);
+  margin: max(0, 2%) max(0, 10%);
   & > * {
     margin: 2rem 0;
   }
@@ -21,7 +28,7 @@
 .stripe-scroll {
   position: relative;
   display: inline-block;
-  left: 82.5%;
+  left: 80%;
   width: 12rem;
   transform: rotate(90deg);
 
@@ -41,11 +48,5 @@
       padding: 0rem 1rem 2rem 0;
       animation: borderScrollAnim 3.7s linear infinite;
     }
-  }
-}
-
-@media (max-width: 700px) {
-  .header-text-box > * {
-    margin: 1rem 0;
   }
 }
