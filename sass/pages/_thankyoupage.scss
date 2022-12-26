@@ -1,0 +1,50 @@
+.thank-you-page-hero {
+  position: relative;
+  background-color: $color-primary;
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-top: 4rem;
+  height: 20vh;
+}
+
+.thank-you-page-row {
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: $max-width;
+  margin: -10rem auto 50rem;
+  min-height: 50rem;
+}
+
+.thank-you-col1 {
+  position: relative;
+  margin-inline: auto;
+  width: clamp(35ch, 90%, 50ch);
+
+  @include respond(tab-land) {
+    text-align: center;
+  }
+}
+
+.thank-you-col2 {
+  position: relative;
+  width: 46ch;
+  margin-inline: auto;
+}
+
+.thank-you-img {
+  position: absolute;
+  width: 560px;
+  opacity: 0.8;
+  border-radius: 40px;
+  right: 0;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
+  // @include respond(phone) {
+  //   width: 100%;
+  // }
+}

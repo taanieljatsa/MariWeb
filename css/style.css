@@ -248,6 +248,16 @@
     transform: skew(0deg, 0deg);
   }
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 *,
 *::after,
 *::before {
@@ -288,6 +298,11 @@ h3 {
   padding-right: 1rem;
   font-weight: 700;
   margin-bottom: 3rem;
+}
+
+.thank-you-page-paragraph {
+  font-size: 2.2rem;
+  line-height: 4rem;
 }
 
 .heading-primary {
@@ -340,7 +355,7 @@ h3 {
 }
 
 .u-margin-top-negative {
-  margin-top: -15rem;
+  margin-top: -10%;
 }
 
 .center-img {
@@ -358,6 +373,7 @@ h3 {
   text-align: center;
   position: relative;
   width: 190px;
+  outline: 3px solid transparent;
 }
 .btn:active {
   transform: translate(5px, 5px);
@@ -407,6 +423,11 @@ h3 {
   overflow: hidden;
 }
 
+@media (forced-colors: active) {
+  .work-introduction-side {
+    padding-left: 2rem;
+  }
+}
 .border-1 {
   position: relative;
   width: 45ch;
@@ -426,6 +447,7 @@ h3 {
   position: relative;
   height: 100%;
   width: 100%;
+  outline: 3px solid transparent;
 }
 
 .border-1:before {
@@ -480,39 +502,74 @@ h3 {
   animation: animatedDots-4 3s ease-in 15;
 }
 
-.main-pic {
+.img-1 {
+  position: absolute;
   width: 272px;
   border-radius: 2px;
-}
-
-.pic-1 {
-  position: absolute;
   top: 20%;
   left: 10%;
   z-index: 3;
   box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
 }
 
-.pic-1:hover {
-  will-change: transform;
-  transform: translateZ(0);
-  transform: scale(1.00001);
-  box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.4);
+.img-1-hover-active {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  width: 400px;
+  border-radius: 2px;
+  top: 5%;
+  left: 7%;
+  box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
+  animation: fadein 0.3s ease-in-out 1;
+}
+@media only screen and (max-width: 37.5em) {
+  .img-1-hover-active {
+    width: 85%;
+  }
 }
 
-.pic-2 {
+.img-1:hover + .img-1-hover-active {
+  display: block;
+}
+
+.img-1-hover-active:hover {
+  display: block;
+}
+
+.img-2 {
   position: absolute;
+  width: 272px;
+  border-radius: 2px;
   top: 5%;
   right: 10%;
   z-index: 2;
 }
 
-.pic-2:hover {
-  will-change: transform;
-  transform: translateZ(0);
-  transform: scale(1.00001);
+.img-2-hover-active {
+  position: absolute;
+  display: none;
+  width: 400px;
+  border-radius: 2px;
+  top: 5%;
+  right: 6%;
+  z-index: 8;
+  opacity: 1;
   box-shadow: 0 2.5rem 6rem rgba(33, 33, 33, 0.4);
-  z-index: 3;
+  animation: fadein 0.3s ease-in-out 1;
+}
+@media only screen and (max-width: 37.5em) {
+  .img-2-hover-active {
+    width: 85%;
+  }
+}
+
+.img-2:hover + .img-2-hover-active {
+  display: block;
+}
+
+.img-2-hover-active:hover {
+  display: block;
 }
 
 @media only screen and (max-width: 75em) {
@@ -525,13 +582,54 @@ h3 {
 .border-2:before {
     display: none;
   }
-  .main-pic {
+  .comp-img-phone {
     width: 240px;
   }
   .work-section-container {
     margin: 2rem auto;
   }
 }
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 175px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 1px 1px 3px 0 hsl(0deg, 0%, 50%), 1px 1px 3px 0 hsl(0deg, 0%, 90%);
+}
+
+.flip-card-front {
+  background-color: #cbd8c8;
+  color: #212121;
+}
+
+.flip-card-back {
+  background-color: #cbd8c8;
+  color: #212121;
+  transform: rotateY(180deg);
+  box-shadow: 1px 1px 3px 0 hsl(0deg, 0%, 50%), 1px 1px 3px 0 hsl(0deg, 0%, 90%);
+}
+
 .hidden {
   will-change: transform;
   transform: translateZ(0);
@@ -821,7 +919,7 @@ textarea:focus {
   border-radius: 2px;
   box-shadow: 0 0.5rem 2rem rgba(33, 33, 33, 0.4);
   align-self: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 @media only screen and (max-width: 75em) {
   .product-page-picture {
@@ -841,7 +939,7 @@ textarea:focus {
   text-align: center;
   width: clamp(20ch, 80%, 80ch);
   margin: 0 auto;
-  padding: 0 0 20rem;
+  padding: 0 0 15%;
 }
 .product-page-text-box > * {
   margin: 2rem 0;
@@ -865,7 +963,12 @@ textarea:focus {
 @media only screen and (max-width: 56.25em) {
   .product-page-row-wrapper {
     flex-wrap: wrap-reverse;
-    margin: 15rem auto;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .product-page-row-wrapper {
+    max-width: 100%;
   }
 }
 
@@ -876,7 +979,7 @@ textarea:focus {
 }
 @media only screen and (max-width: 56.25em) {
   .col-left {
-    margin: 5rem auto;
+    margin: 0 auto;
     text-align: center;
   }
 }
@@ -902,10 +1005,46 @@ textarea:focus {
   }
 }
 
-.carbuy-product-img {
-  width: 70%;
+.product-page-flyer {
+  width: 400px;
   border-radius: 2px;
-  transition: all 0.2s ease;
+  transition: all 1s ease;
+}
+@media only screen and (max-width: 56.25em) {
+  .product-page-flyer:hover {
+    z-index: 3;
+    box-shadow: 1px 1px 3px 0 hsl(0deg, 0%, 50%), 1px 1px 3px 0 hsl(0deg, 0%, 90%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .product-page-flyer {
+    width: 100%;
+  }
+}
+
+.flyer-large {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  width: 600px;
+  border-radius: 2px;
+  bottom: 0;
+  right: 0;
+  animation: fadein 0.3s ease-in-out 1;
+}
+
+.product-page-flyer:hover + .flyer-large {
+  display: block;
+}
+@media only screen and (max-width: 56.25em) {
+  .product-page-flyer:hover + .flyer-large {
+    display: none;
+  }
+}
+
+.flyer-large:hover {
+  display: block;
+  box-shadow: 1px 1px 3px 0 hsl(0deg, 0%, 50%), 1px 1px 3px 0 hsl(0deg, 0%, 90%);
 }
 
 .hover-swap {
@@ -914,6 +1053,7 @@ textarea:focus {
 
 .carbuy-logo {
   border-radius: 100%;
+  width: 274px;
 }
 @media only screen and (max-width: 56.25em) {
   .carbuy-logo {
@@ -937,41 +1077,75 @@ textarea:focus {
   opacity: 1;
 }
 
-.carbuy-product-img:hover {
-  width: 80%;
-  transition: all 0.2s ease;
-  box-shadow: 15px 15px 20px 0 hsl(0deg, 0%, 50%), 30px 30px 20px 0 hsl(0deg, 0%, 90%);
-}
-
 .product-page-business {
-  width: 40%;
   position: absolute;
   left: 5%;
   bottom: -10%;
-  transition: all 0.2s;
   z-index: 1;
 }
-
-.product-page-business:hover {
-  width: 50%;
+@media only screen and (max-width: 56.25em) {
+  .product-page-business {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
-.product-page-flyer {
-  width: 80%;
-  transition: all 0.2s;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.product-page-flyer:hover {
-  width: 100%;
-  z-index: 1;
-  box-shadow: 15px 15px 20px 0 hsl(0deg, 0%, 50%), 30px 30px 20px 0 hsl(0deg, 0%, 90%);
+.business-card-img {
+  width: 300px;
+  height: 175px;
 }
 
 .product-page-logo {
   border-radius: 100%;
+  width: 274px;
+}
+
+.thank-you-page-hero {
+  position: relative;
+  background-color: #cbd8c8;
+  max-width: 96%;
+  margin-inline: auto;
+  padding-top: 4rem;
+  height: 20vh;
+}
+
+.thank-you-page-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 96%;
+  margin: -10rem auto 50rem;
+  min-height: 50rem;
+}
+
+.thank-you-col1 {
+  position: relative;
+  margin-inline: auto;
+  width: clamp(35ch, 90%, 50ch);
+}
+@media only screen and (max-width: 75em) {
+  .thank-you-col1 {
+    text-align: center;
+  }
+}
+
+.thank-you-col2 {
+  position: relative;
+  width: 46ch;
+  margin-inline: auto;
+}
+
+.thank-you-img {
+  position: absolute;
+  width: 560px;
+  opacity: 0.8;
+  border-radius: 40px;
+  right: 0;
+}
+@media only screen and (max-width: 75em) {
+  .thank-you-img {
+    width: 100%;
+  }
 }
 
 .what-we-do {
@@ -1083,6 +1257,8 @@ textarea:focus {
   display: none;
   cursor: pointer;
   margin-right: 5%;
+  background: transparent;
+  border: 0;
 }
 
 .bar {
@@ -1117,13 +1293,13 @@ body.stop-scrolling {
     transform: translateY(-8px) rotate(45deg);
   }
   .nav-menu {
-    position: fixed;
-    right: 5rem;
+    position: absolute;
+    right: -40%;
     opacity: 0;
     z-index: 0;
     transform: scale(0);
     padding: 3rem;
-    top: 9rem;
+    top: 7rem;
     box-shadow: inset -1px -1px 20px 3px rgba(1, 80, 42, 0.32), 1px 1px 50px 3px rgba(1, 80, 42, 0.32);
     border-radius: 100%;
     flex-direction: column;
@@ -1137,7 +1313,7 @@ body.stop-scrolling {
     margin: 2rem 0;
   }
   .nav-menu.active {
-    right: 5rem;
+    right: -4%;
     opacity: 1;
     z-index: 1;
     transform: scale(1);

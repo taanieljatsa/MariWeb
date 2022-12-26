@@ -18,6 +18,12 @@
   overflow: hidden;
 }
 
+@media (forced-colors: active) {
+  .work-introduction-side {
+    padding-left: 2rem;
+  }
+}
+
 .border-1 {
   position: relative;
   width: 45ch;
@@ -37,6 +43,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  outline: 3px solid transparent;
 }
 
 .border-1:before {
@@ -91,39 +98,82 @@
   animation: animatedDots-4 3s ease-in 15;
 }
 
-.main-pic {
+.img-1 {
+  position: absolute;
   width: 272px;
   border-radius: 2px;
-}
-
-.pic-1 {
-  position: absolute;
   top: 20%;
   left: 10%;
   z-index: 3;
   box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
 }
 
-.pic-1:hover {
-  will-change: transform;
-  transform: translateZ(0);
-  transform: scale(1.00001);
-  box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.4);
+// .img-1-hover {
+//   display: none;
+// }
+
+.img-1-hover-active {
+  z-index: 10;
+  // display: block;
+  display: none;
+  position: absolute;
+  width: 400px;
+  border-radius: 2px;
+  top: 5%;
+  left: 7%;
+  // z-index: 3;
+  box-shadow: 0 0.5rem 2rem rgba($color-dark, 0.4);
+  animation: fadein 0.3s ease-in-out 1;
+
+  @include respond(phone) {
+    width: 85%;
+  }
 }
 
-.pic-2 {
+.img-1:hover + .img-1-hover-active {
+  display: block;
+}
+
+.img-1-hover-active:hover {
+  display: block;
+}
+
+.img-2 {
   position: absolute;
+  width: 272px;
+  border-radius: 2px;
   top: 5%;
   right: 10%;
   z-index: 2;
 }
 
-.pic-2:hover {
-  will-change: transform;
-  transform: translateZ(0);
-  transform: scale(1.00001);
+// .img-2-hover {
+//   display: none;
+// }
+.img-2-hover-active {
+  position: absolute;
+  // display: block;
+  display: none;
+  width: 400px;
+  border-radius: 2px;
+  top: 5%;
+  right: 6%;
+  z-index: 8;
+  opacity: 1;
   box-shadow: 0 2.5rem 6rem rgba($color-dark, 0.4);
-  z-index: 3;
+  animation: fadein 0.3s ease-in-out 1;
+
+  @include respond(phone) {
+    width: 85%;
+  }
+}
+
+.img-2:hover + .img-2-hover-active {
+  display: block;
+}
+
+.img-2-hover-active:hover {
+  display: block;
 }
 
 @include respond(tab-land) {
@@ -138,7 +188,7 @@
     display: none;
   }
 
-  .main-pic {
+  .comp-img-phone {
     width: 240px;
   }
 

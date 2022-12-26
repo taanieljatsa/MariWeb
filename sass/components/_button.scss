@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   width: $width-button;
+  outline: 3px solid transparent;
 
   &:active {
     // translate: 5px 5px;
